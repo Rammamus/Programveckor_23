@@ -10,12 +10,16 @@ public class ScoreScript : MonoBehaviour
     public int highScore;
     public int coins;
 
+    //connection with character script - Adrian
+    public karäktar player;
+
     public void BuyHPStat()
     {
         if (coins >= HP.price)
         {
             coins -= HP.price;
             HP.price *= 2;
+            player.GetComponent<karäktar>().playHP *= 1.1f;
         }
 
     }
@@ -26,6 +30,7 @@ public class ScoreScript : MonoBehaviour
         {
             coins -= Strength.price;
             Strength.price *= 2;
+            player.GetComponent<karäktar>().playDMG *= 1.1f;
         }
     }
 
@@ -35,6 +40,7 @@ public class ScoreScript : MonoBehaviour
         {
             coins -= Speed.price;
             Speed.price *= 2;
+            player.GetComponent<karäktar>().playSpeed *= 1.1f;
         }
     }
 
@@ -44,6 +50,7 @@ public class ScoreScript : MonoBehaviour
         {
             coins -= AttackSpeed.price;
             AttackSpeed.price *= 2;
+            player.GetComponent<karäktar>().playAttackSpeed *= 1.1f;
         }
     }
 

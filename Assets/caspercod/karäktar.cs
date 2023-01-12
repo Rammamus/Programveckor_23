@@ -9,7 +9,7 @@ public class karäktar : MonoBehaviour
     [SerializeField] KeyCode down;
     [SerializeField] KeyCode vänster;
     [SerializeField] KeyCode höger;
-    [SerializeField] float speed = 1.6f;
+    [SerializeField] public float playSpeed = 1.6f;
     [SerializeField] TrailRenderer tr;
     [SerializeField] Rigidbody2D rb; 
     private bool canDash = true;
@@ -17,6 +17,11 @@ public class karäktar : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
+
+    public float playHP = 100;
+    public float playAttackSpeed;
+    public float playDMG = 20f;
+
     
 
     // Start is called before the first frame update
