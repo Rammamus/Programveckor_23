@@ -17,7 +17,7 @@ public class karäktar : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
-    private float endDash = -24f; 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -49,9 +49,15 @@ public class karäktar : MonoBehaviour
             transform.position += new Vector3(0, -3, 0) * Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.E) && canDash)
         {
             StartCoroutine(Dash());
+            print("högerdash");
+        }
+        if (Input.GetKeyDown(KeyCode.Q) && canDash)
+        {
+            StartCoroutine(Dash2());
+            print("vänsterdash");
         }
     }
     private IEnumerator Dash()
@@ -72,5 +78,24 @@ public class karäktar : MonoBehaviour
         }
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true; 
+    }
+    private IEnumerator Dash2()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(-transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        if (isDashing == false)
+        {
+            rb.velocity = new Vector2(0f, 0f);
+        }
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
