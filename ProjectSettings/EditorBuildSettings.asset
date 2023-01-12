@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Adrian highscore scene.unity
+    guid: fb1155801c3115e468eac804f8a71868
+  - enabled: 1
+    path: Assets/Scenes/Adrian 2.unity
+    guid: c499660953a125b42a9667a06ffc84d2
   m_configObjects: {}
