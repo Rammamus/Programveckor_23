@@ -26,9 +26,6 @@ public class Enemy : MonoBehaviour
     Enemies glass = new Enemies("Glass", 40, 15, 1.5f);
     Enemies babyGlass = new Enemies("Baby Glass", 20, 7.5f, 2.5f);
 
-    [SerializeField]
-    private EnemyData data;
-
     private GameObject player;
 
     //Checks what enemy type it is - Adrian
