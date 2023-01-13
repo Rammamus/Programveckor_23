@@ -5,6 +5,7 @@ using UnityEngine;
 public class karäktar : MonoBehaviour
 
 {
+    //Variables for movement and dash - Casper
     [SerializeField] BoxCollider2D boxCollider;
     [SerializeField] KeyCode up;
     [SerializeField] KeyCode down;
@@ -19,16 +20,36 @@ public class karäktar : MonoBehaviour
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
+    //Player stats - Adrian
     public float playHP;
     public float playMAXHP = 100;
     public float playAttackSpeed;
-    public float playDMG = 20f;
+    public float playDMG;
 
+    //audio for different events - Ocean
     public AudioSource dash;
     public AudioSource hurt;
     public AudioSource powerUp;
 
-    
+    public bool usingSword = false;
+    public bool usingAxe = false;
+
+    //Creates weapons - Zion
+    class Weapons
+    {
+        public string name;
+        public float dmg;
+        public float attackSpeed;
+
+        public Weapons(string name, float dmg, float attackspeed)
+        {
+            this.name = name;
+            this.dmg = dmg;
+            this.attackSpeed = attackspeed;
+        }
+    }
+    Weapons sword = new Weapons("Sword", 20, 3);
+    Weapons axe = new Weapons("Axe", 30, 5);
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +93,21 @@ public class karäktar : MonoBehaviour
             print("vänsterdash");
             dash.Play();
         }
+        
+        //check what weapon is used - Zion
+        if (usingAxe == true)
+        {
+            playAttackSpeed = axe.attackSpeed;
+            playDMG = axe.dmg;
+        }
+        else if (usingSword == true)
+        {
+            playAttackSpeed = sword.attackSpeed;
+            playDMG = sword.dmg;
+        }
     }
+
+    //function for dashing right - Casper
     private IEnumerator Dash()
     {
         canDash = false; 
@@ -92,6 +127,8 @@ public class karäktar : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true; 
     }
+
+    //function for dashing left - Casper
     private IEnumerator Dash2()
     {
         canDash = false;
