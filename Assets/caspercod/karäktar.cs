@@ -18,7 +18,8 @@ public class karäktar : MonoBehaviour
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
-    public float playHP = 100;
+    public float playHP;
+    public float playMAXHP = 100;
     public float playAttackSpeed;
     public float playDMG = 20f;
 
@@ -27,7 +28,7 @@ public class karäktar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playHP = playMAXHP;
     }
 
     // Update is called once per frame
