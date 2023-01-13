@@ -9,10 +9,9 @@ public class ScoreScript : MonoBehaviour
     public int score;
     public int highScore;
     public int coins;
-
-    //connection with character script - Adrian
     public karäktar player;
 
+    //All below allows buying perma stat boosts - Adrian
     public void BuyHPStat()
     {
         if (coins >= HP.price)
@@ -73,26 +72,14 @@ public class ScoreScript : MonoBehaviour
         }
         
 
-        //new highscore
+        //new highscore - Adrian
         if (score > highScore)
         {
             highScore = score;
         }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            SceneManager.LoadScene("Adrian 2");
-        }
-        /*
-        if (hP == true && coins >= cost)
-        {
-            coins -= cost;
-            coins -= HP.price;
-        }
-        */
     }
     
-    //allows creation of new item - Adrian
+    //allows creation of new items - Adrian
     class PermaUpgrades
     {
         public string name;
@@ -110,11 +97,4 @@ public class ScoreScript : MonoBehaviour
     PermaUpgrades Strength = new PermaUpgrades("Bicep Curls", 50);
     PermaUpgrades Speed = new PermaUpgrades("New Boots", 50);
     PermaUpgrades AttackSpeed = new PermaUpgrades("Lighter Gloves", 50);
-
-    /*
-    if(press the HP key && coins >= HP.price)
-    {
-        coins -= HP.price;
-    }
-     */
 }
