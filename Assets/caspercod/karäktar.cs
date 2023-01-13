@@ -23,6 +23,10 @@ public class karäktar : MonoBehaviour
     public float playAttackSpeed;
     public float playDMG = 20f;
 
+    public AudioSource dash;
+    public AudioSource hurt;
+    public AudioSource powerUp;
+
     
 
     // Start is called before the first frame update
@@ -59,11 +63,13 @@ public class karäktar : MonoBehaviour
         {
             StartCoroutine(Dash());
             print("högerdash");
+            dash.Play();
         }
         if (Input.GetKeyDown(KeyCode.Q) && canDash)
         {
             StartCoroutine(Dash2());
             print("vänsterdash");
+            dash.Play();
         }
     }
     private IEnumerator Dash()
