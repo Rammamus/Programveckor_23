@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MAINMENU : MonoBehaviour
 {
+    public AudioSource clickSound;
+
     public void PlayGame ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // byt ut 1an mot gamescene
+        clickSound.Play();
  
     }
     public void QuitGame ()
@@ -15,4 +18,6 @@ public class MAINMENU : MonoBehaviour
         Debug.Log("QUIT!");
         Application.Quit();
     }
+
+   
 }
