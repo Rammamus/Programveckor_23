@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool isEasy = false;
+    public bool isMedium = false;
+    public bool isHard = false;
+    public bool isImpossible = false; 
+
     //allows for creating different enemy types - Adrian
     class Enemies
     {
@@ -86,4 +91,5 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+
 }
