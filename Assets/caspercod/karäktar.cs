@@ -5,6 +5,7 @@ using UnityEngine;
 public class karäktar : MonoBehaviour
 
 {
+    [SerializeField] BoxCollider2D boxCollider;
     [SerializeField] KeyCode up;
     [SerializeField] KeyCode down;
     [SerializeField] KeyCode vänster;
@@ -109,5 +110,9 @@ public class karäktar : MonoBehaviour
         }
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
     }
 }
