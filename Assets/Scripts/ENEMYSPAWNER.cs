@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+
+public class Wave
+{
+    public string waveName;
+    public int noOfEnemies;
+    public GameObject[] typeOfEnemies;
+
+}
+
 public class ENEMYSPAWNER : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] Wave[] waves;
 }
