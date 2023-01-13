@@ -60,6 +60,14 @@ public class Enemy : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, dog.speed * Time.deltaTime);
         }
+        if (isGlass == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, glass.speed * Time.deltaTime);
+        }
+        if (isBabyGlass == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, babyGlass.speed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
