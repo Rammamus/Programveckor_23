@@ -10,6 +10,12 @@ public class karäktar : MonoBehaviour
     public bool isAttacking = false;
     float attackDis = 0;
     float timer;
+    
+    // Variables for animation - Zion
+    public Animator anim;
+    bool isrunning = true;
+    
+    
 
     //Variables for movement and dash - Casper
     [SerializeField] BoxCollider2D boxCollider;
@@ -61,6 +67,8 @@ public class karäktar : MonoBehaviour
     void Start()
     {
         playHP = playMAXHP;
+        anim = GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -96,6 +104,16 @@ public class karäktar : MonoBehaviour
         {
             StartCoroutine(Dash2());
             dash.Play();
+        }
+
+        // The Animation for run cycle- Zion, have not drawn the character
+        if (isrunning == true)
+        {
+            anim.SetBool("isRunning",true);
+            if ( anim != null)
+            {
+                isrunning = false;// just standing - Zion
+            }
         }
         
         //check what weapon is used - Zion
@@ -175,4 +193,6 @@ public class karäktar : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
     }
+
+    
 }
