@@ -46,6 +46,43 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        if (isEasy == true)
+        {
+            dog.hp *= 0.5f;
+            dog.dmg *= 0.5f;
+            glass.hp *= 0.5f;
+            glass.dmg *= 0.5f;
+            babyGlass.hp *= 0.5f;
+            babyGlass.dmg *= 0.5f;
+        }
+        if (isMedium == true)
+        {
+            dog.hp *= 1f;
+            dog.dmg *= 1f;
+            glass.hp *= 1f;
+            glass.dmg *= 1f;
+            babyGlass.hp *= 1f;
+            babyGlass.dmg *= 1f;
+        }
+        if(isHard == true)
+        {
+            dog.hp *= 1.25f;
+            dog.dmg *= 1.5f;
+            glass.hp *= 1.25f;
+            glass.dmg *= 1.5f;
+            babyGlass.hp *= 1.25f;
+            babyGlass.dmg *= 1.5f;
+        }
+        if (isImpossible == true)
+        {
+            dog.hp *= 1.5f;
+            dog.dmg *= 2.5f;
+            glass.hp *= 1.5f;
+            glass.dmg *= 2.5f;
+            babyGlass.hp *= 1.5f;
+            babyGlass.dmg *= 2.5f;
+        }
     }
 
     // Update is called once per frame
