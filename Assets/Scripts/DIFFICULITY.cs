@@ -17,10 +17,10 @@ public class DIFFICULITY : MonoBehaviour
     private void HardDiff()
     {
         em.gameObject.GetComponent<Enemy>().isHard = true;
+        
     }
     private void ImpossibleDiff()
     {
         em.gameObject.GetComponent<Enemy>().isImpossible = true;
-        print("funkar?");
     }
 }
