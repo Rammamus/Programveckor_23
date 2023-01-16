@@ -1,34 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class tooltip : MonoBehaviour
 {
-    private Text tooltipText;
-    private RectTransform backgroundRectTransform; 
+
+    public static tooltip _instance;
+
+   public TMPro.TextMeshProUGUI textComponent; 
 
     private void Awake()
     {
-        backgroundRectTransform = transform.Find("background").GetComponent<RectTransform>();
-        tooltipText = transform.Find("text").GetComponent<Text>();
-
-        ShowTooltip("ord");
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this; 
+        }
     }
 
-
-    private void ShowTooltip(string tooltipstring)
+    // Start is called before the first frame update
+    void Start()
     {
-        gameObject.SetActive(true);
-
-        tooltipText.text = tooltipstring;
-        float textPaddingSize = 4f;
-        Vector2 backgroundSize = new Vector2(tooltipText.preferredWidth + textPaddingSize * 2f, tooltipText.preferredHeight + textPaddingSize * 2f);
-        backgroundRectTransform.sizeDelta = backgroundSize;
-
+        
     }
-    private void HideToolTip()
+
+    // Update is called once per frame
+    void Update()
     {
-        gameObject.SetActive(false);
+        
     }
 }
