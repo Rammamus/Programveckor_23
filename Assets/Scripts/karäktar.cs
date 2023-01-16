@@ -5,6 +5,11 @@ using UnityEngine;
 public class karäktar : MonoBehaviour
 
 {
+    //Variables for attacking - Adrian
+    public BulletScript ProjectilePreFab;
+    public Transform LaunchOffset;
+    float timer;
+
     //Variables for movement and dash - Casper
     [SerializeField] BoxCollider2D boxCollider;
     [SerializeField] KeyCode up;
@@ -60,6 +65,7 @@ public class karäktar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Movement and dashing - Casper
         if (isDashing)
         {
             return; 
@@ -104,6 +110,13 @@ public class karäktar : MonoBehaviour
         {
             playAttackSpeed = sword.attackSpeed;
             playDMG = sword.dmg;
+        }
+        timer += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.Mouse1) && timer >= playAttackSpeed)
+        {
+            print("he attack");
+            Instantiate(ProjectilePreFab, LaunchOffset.position, transform.rotation);
+            timer = 0;
         }
     }
 
