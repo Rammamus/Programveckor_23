@@ -29,7 +29,9 @@ public class ENEMYSPAWNER : MonoBehaviour
 
     public bool waveOver = false;
     public float waveTimer;
-    public int timer2 = 30;
+    public int timer2 = 15;
+
+    List<GameObject> enemies = new List<GameObject>();
 
 
 
@@ -37,14 +39,35 @@ public class ENEMYSPAWNER : MonoBehaviour
 
         private void Update()
     {
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            if (enemies[i] == null)
+            {
+                enemies.RemoveAt(i);
+            }
+        }
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
+        if (!canSpawn && currentWaveNumber+1 != waves.Length)
         {
             currentWaveNumber++;
-            canSpawn = true;
+            if (timer2 <= 0)
+            {
+                canSpawn = true;
+                waveOver = false;
+                print(" ocean ");
+            }
+            
+
         }
+
+
+        if (enemies.Count == 0 )
+        {
+            waveOver = true;
+        }
+        
         if (waveOver == true)
         {
 
@@ -64,7 +87,7 @@ public class ENEMYSPAWNER : MonoBehaviour
         if (canSpawn == true)
         {
             waveOver = false;
-            timer2 = 30;
+            timer2 = 15;
 
         }
     }
@@ -88,14 +111,14 @@ public class ENEMYSPAWNER : MonoBehaviour
         {
         GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
         Transform randomPoint = spawnPoint[Random.Range(0, spawnPoint.Length)];
-        Instantiate(randomEnemy, randomPoint.position, Quaternion.identity);
+        enemies.Add( Instantiate(randomEnemy, randomPoint.position, Quaternion.identity));
             currentWave.noOfEnemies--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
         }
         if (currentWave.noOfEnemies == 0)
         {
             canSpawn = false;
-            waveOver = true;
+            
         }
 
       

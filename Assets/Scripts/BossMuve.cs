@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossMuve : MonoBehaviour
 {
     public float chaseDistance;
+    public bool isChasing;
     // Start is called before the first frame update
     void Start()
     {
