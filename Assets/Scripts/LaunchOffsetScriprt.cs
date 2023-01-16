@@ -6,7 +6,6 @@ public class LaunchOffsetScriprt : MonoBehaviour
 {
     public Transform target;
     public GameObject prefab;
-
     // Start is called before the first frame update
     void Start()
     {
