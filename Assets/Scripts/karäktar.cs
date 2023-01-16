@@ -6,8 +6,9 @@ public class karäktar : MonoBehaviour
 
 {
     //Variables for attacking - Adrian
-    public BulletScript ProjectilePreFab;
-    public Transform LaunchOffset;
+    public GameObject attack;
+    public bool isAttacking = false;
+    float attackDis = 0;
     float timer;
 
     //Variables for movement and dash - Casper
@@ -62,7 +63,6 @@ public class karäktar : MonoBehaviour
         playHP = playMAXHP;
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Movement and dashing - Casper
@@ -90,13 +90,11 @@ public class karäktar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canDash)
         {
             StartCoroutine(Dash());
-            print("högerdash");
             dash.Play();
         }
         if (Input.GetKeyDown(KeyCode.Q) && canDash)
         {
             StartCoroutine(Dash2());
-            print("vänsterdash");
             dash.Play();
         }
         
@@ -111,12 +109,24 @@ public class karäktar : MonoBehaviour
             playAttackSpeed = sword.attackSpeed;
             playDMG = sword.dmg;
         }
+
+        //Both activates the attack object and sets a duration timer that deactivates it - Adrian
         timer += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Mouse1) && timer >= playAttackSpeed)
         {
-            print("he attack");
-            Instantiate(ProjectilePreFab, LaunchOffset.position, transform.rotation);
+            attack.SetActive(true);
             timer = 0;
+            isAttacking = true;
+        }
+        if (isAttacking == true)
+        {
+            attackDis += Time.deltaTime;
+            if (attackDis > 1.5f)
+            {
+                attack.SetActive(false);
+                isAttacking = false;
+                attackDis = 0;
+            }
         }
     }
 
