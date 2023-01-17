@@ -40,8 +40,11 @@ public class karäktar : MonoBehaviour
 
     //audio for different events - Ocean
     public AudioSource dash;
-    public AudioSource hurt;
     public AudioSource powerUp;
+    public AudioSource axeSlash;
+    public AudioSource swordSlash;
+    private AudioSource source;
+    public AudioClip[] sounds;
 
     public bool usingSword = false;
     public bool usingAxe = false;
@@ -68,7 +71,7 @@ public class karäktar : MonoBehaviour
     {
         playHP = playMAXHP;
         anim = GetComponent<Animator>();
-        
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -107,6 +110,7 @@ public class karäktar : MonoBehaviour
         }
 
         // The Animation for run cycle- Zion, have not drawn the character
+        /*
         if (isrunning == true)
         {
             anim.SetBool("isRunning",true);
@@ -115,17 +119,20 @@ public class karäktar : MonoBehaviour
                 isrunning = false;// just standing - Zion
             }
         }
+        */
         
         //check what weapon is used - Zion
         if (usingAxe == true)
         {
             playAttackSpeed = axe.attackSpeed;
             playDMG = axe.dmg;
+        
         }
         else if (usingSword == true)
         {
             playAttackSpeed = sword.attackSpeed;
             playDMG = sword.dmg;
+            
         }
 
         //Both activates the attack object and sets a duration timer that deactivates it - Adrian
@@ -135,6 +142,14 @@ public class karäktar : MonoBehaviour
             attack.SetActive(true);
             timer = 0;
             isAttacking = true;
+            if (usingAxe == true)
+            {
+                axeSlash.Play();
+            }
+            else if (usingSword == true)
+            {
+                swordSlash.Play();
+            }
         }
         if (isAttacking == true)
         {
@@ -144,6 +159,8 @@ public class karäktar : MonoBehaviour
                 attack.SetActive(false);
                 isAttacking = false;
                 attackDis = 0;
+                
+
             }
         }
     }
@@ -190,9 +207,16 @@ public class karäktar : MonoBehaviour
         canDash = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            source.clip = sounds[Random.Range(0, sounds.Length)];
+            source.PlayOneShot(source.clip);
+           
+        }
     }
 
-    
+
+
 }
