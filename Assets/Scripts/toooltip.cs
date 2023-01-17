@@ -8,14 +8,10 @@ public class toooltip : MonoBehaviour
 
 
 
-    Vector3 mousePos = Input.mousePosition;
     
    
    
 
 
-    /* tooltip._instance.HideToolTip(); 
-     * 
-     * tooltip._instance.SetAndShowToolTip(messasge);
-     */
+    
 }
