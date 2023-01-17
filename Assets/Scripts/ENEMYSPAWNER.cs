@@ -49,14 +49,15 @@ public class ENEMYSPAWNER : MonoBehaviour
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (!canSpawn && currentWaveNumber+1 != waves.Length)
+        if (totalEnemies.Length == 0)
         {
-            currentWaveNumber++;
+            
             if (timer2 <= 0)
             {
                 canSpawn = true;
                 waveOver = false;
                 print(" ocean ");
+                currentWaveNumber++;
             }
             
 
