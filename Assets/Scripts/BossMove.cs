@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossMuve : MonoBehaviour
+public class BossMove: MonoBehaviour
 {
     public float chaseDistance;
     public bool isChasing;
@@ -23,10 +23,13 @@ public class BossMuve : MonoBehaviour
         {
             if(transform.position.x > player.transform.position.x)
             {
+                transform.localScale = new Vector3(1, 1, 1);
                 transform.position += Vector3.left * moveSpeed * Time.deltaTime;
             }
+               
             if (transform.position.x < player.transform.position.x) 
             {
+                transform.localScale = new Vector3(-1, 1, 1);
                 transform.position += Vector3.right * moveSpeed * Time.deltaTime;
             }
         }
