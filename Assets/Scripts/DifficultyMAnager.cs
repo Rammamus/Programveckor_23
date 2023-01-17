@@ -10,8 +10,12 @@ public class DifficultyMAnager : MonoBehaviour
     public bool bossDeadMedium = false;
     public bool bossDeadHard = false;
     public bool impossibleisUnlock = false;
+    public bool impossibleLocked = true;
+    public bool hardLocked = true;
     public GameObject hardbutton;
     public GameObject impossibleButton;
+    public GameObject hardlockedButton;
+    public GameObject impossibleLockedButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,19 +36,32 @@ public class DifficultyMAnager : MonoBehaviour
             hardIsUnlock = true; 
         }
 
-        if (bossDeadHard == true)
+        if (hardIsBeat == true)
         {
             impossibleisUnlock = true;
         }
 
         if (hardIsUnlock == false)
         {
-            hardbutton.SetActive(false); 
+            hardbutton.SetActive(false);
+            hardlockedButton.SetActive(true);
+
+        }
+        else if (hardIsUnlock == true)
+        {
+            hardbutton.SetActive(true);
+            hardlockedButton.SetActive(false);
         }
 
         if (impossibleisUnlock == false)
         {
             impossibleButton.SetActive(false);
+            impossibleLockedButton.SetActive(true);
+        } 
+        else if (impossibleisUnlock == true)
+        {
+            impossibleButton.SetActive(true);
+            impossibleLockedButton.SetActive(false);
         }
     }
 }
