@@ -34,7 +34,7 @@ public class ENEMYSPAWNER : MonoBehaviour
     List<GameObject> enemies = new List<GameObject>();
 
 
-
+    public GameObject betweenWaveTimer;
 
 
         private void Update()
@@ -56,7 +56,6 @@ public class ENEMYSPAWNER : MonoBehaviour
             {
                 canSpawn = true;
                 waveOver = false;
-                print(" ocean ");
                 currentWaveNumber++;
             }
             
@@ -71,13 +70,17 @@ public class ENEMYSPAWNER : MonoBehaviour
         
         if (waveOver == true)
         {
-
+            betweenWaveTimer.SetActive(true);
             waveTimer += Time.deltaTime;
             if (waveTimer >= 1)
             {
                 waveTimer = 0;
                 timer2--;
             }
+        }
+        else if (waveOver == false)
+        {
+            betweenWaveTimer.SetActive(false);
         }
 
         currentWaveNum.text = "wave: " + currentWaveNumber.ToString();
