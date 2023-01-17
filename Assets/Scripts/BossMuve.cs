@@ -17,28 +17,28 @@ public class BossMuve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindObjectOfType<karäktar>();
 
         if (isChasing)
         {
-            if(transform.position.x > playerTransform.position.x)
+            if(transform.position.x > player.transform.position.x)
             {
-                transform.position += Vector3.left * moveSpeed * Time.deltaTime
+                transform.position += Vector3.left * moveSpeed * Time.deltaTime;
             }
-            if (transform.position.x < playerTransform.position.x)
+            if (transform.position.x < player.transform.position.x) 
             {
-                transform.position += Vector3.right * moveSpeed * Time.deltaTime
+                transform.position += Vector3.right * moveSpeed * Time.deltaTime;
             }
         }
 
         else
         {
-            if(Vector2.Distance(transform.position, playerTransform.position) < chaseDistance)
+            if(Vector2.Distance(transform.position, player.transform.position) < chaseDistance)
             {
                 isChasing = true;
             }
 
-
+            /*
             if (patrolDestination == 0)
             {
                 transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed);
@@ -47,7 +47,7 @@ public class BossMuve : MonoBehaviour
                     transform.localScale = new Vector3(1, 1, 1);
                     patrolDestination = 1;
                 }
-            }
-        }
-    }
+            }*/
+        } 
+    } 
 }
