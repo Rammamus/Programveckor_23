@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    //DASH GAMING - Adrian
+    public float dashSpeed = 10f;
+    public float dashDistance = 5f;
+    public float coolDown = 2f;
+    private float nextDash;
+    public bool enemyCanDash = false;
+    public bool isCapableOfDash = false;
+
     //stats for enemies - Adrian
     public float enemyHP;
     public float enemyDMG;
@@ -50,6 +58,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        nextDash = Time.time;
 
         //checks enemy type and changes stats accordingly - Adrian
         if (isDog == true)
@@ -57,6 +66,7 @@ public class Enemy : MonoBehaviour
             enemyHP = dog.hp;
             enemyDMG = dog.dmg;
             enemySpeed = dog.speed;
+            isCapableOfDash = true;
         }
         else if (isGlass == true)
         {
@@ -69,6 +79,7 @@ public class Enemy : MonoBehaviour
             enemyHP = babyGlass.hp;
             enemyDMG = babyGlass.dmg;
             enemySpeed = babyGlass.speed;
+            isCapableOfDash = true;
         }
 
         //changes enemy stats with game difficulty - Casper
@@ -97,14 +108,29 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Swarm();
+        Swarm(); //Enemy always follow player - William
 
+        //Enemy die if 0hp or under - Adrian
         if (enemyHP <= 0)
         {
             Destroy(this.gameObject);
         }
+
+        //enemy dashes if they - Adrian
+        if (Time.time > nextDash && isCapableOfDash == true)
+        {
+            Dash();
+            nextDash = Time.time + coolDown;
+        }
     }
 
+    //Enemy dash function - Adrian
+    void Dash()
+    {
+        print("He's trying his best");
+        Vector3 dashDirection = (player.transform.position - transform.position);
+        transform.position = Vector3.MoveTowards(transform.position, transform.position + dashDirection, dashSpeed * Time.deltaTime);
+    }
 
     //makes enemies move towareds player - William
     private void Swarm()
@@ -121,11 +147,13 @@ public class Enemy : MonoBehaviour
                 collider.GetComponent<karäktar>().playHP -= enemyDMG;
             }
         }
+        if (collider.CompareTag("PlayProximity"))
+        {
+            enemyCanDash = true;
+        }
         if (collider.CompareTag("Attack"))
         {
             enemyHP -= GameObject.FindObjectOfType<karäktar>().playDMG;
-            print("it hits");
-            print("enemy HP: " + enemyHP);
         }
     }
 
