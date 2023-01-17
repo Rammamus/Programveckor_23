@@ -6,20 +6,20 @@ using UnityEngine;
 public class DIFFICULITY : MonoBehaviour
 {
     public Enemy em; 
-    private void Easydiff()
+    public void Easydiff()
     {
         em.gameObject.GetComponent<Enemy>().isEasy = true;
     }
-    private void Mediumdiff()
+    public void Mediumdiff()
     {
         em.gameObject.GetComponent<Enemy>().isMedium = true;
     }
-    private void HardDiff()
+    public void HardDiff()
     {
         em.gameObject.GetComponent<Enemy>().isHard = true;
         
     }
-    private void ImpossibleDiff()
+    public void ImpossibleDiff()
     {
         em.gameObject.GetComponent<Enemy>().isImpossible = true;
     }

@@ -808,6 +808,56 @@ MonoBehaviour:
     typeOfEnemies:
     - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
     spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 3258700297637127213, guid: f703de2b51c6f6f4482f8bbc6eed6861, type: 3}
+    spawnInterval: 1
+  - waveName: wave3
+    noOfEnemies: 3
+    typeOfEnemies:
+    - {fileID: 4244838899256997557, guid: 8402a6f480f25914280c014aa93f5b39, type: 3}
+    spawnInterval: 1
   spawnPoint:
   - {fileID: 1435758619}
   - {fileID: 1901821029}
