@@ -14,6 +14,13 @@ public class DeathScreen : MonoBehaviour
     public void Activate_pausemenu()
     {
         pausePanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void DeActivate_pausemenu()
+    {
+        pausePanel.SetActive(false);
+        gamePaused = false;
+        Time.timeScale = 1;
     }
     public void Activate_deathscreen()
     {
