@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BossMove: MonoBehaviour
 {
+    //fråga zion hur spriteflip.x när vänder
+
     public float chaseDistance;
     public bool isChasing;
     public float moveSpeed;
@@ -23,7 +25,7 @@ public class BossMove: MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
     }
 
     // Update is called once per frame
@@ -35,15 +37,26 @@ public class BossMove: MonoBehaviour
         {
             if(transform.position.x > player.transform.position.x)
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(-3.6661f, 3.6661f, 3.6661f);
                 transform.position += Vector3.left * moveSpeed * Time.deltaTime;
             }
                
             if (transform.position.x < player.transform.position.x) 
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(3.6661f, 3.6661f, 3.6661f);
                 transform.position += Vector3.right * moveSpeed * Time.deltaTime;
             }
+
+            if (transform.position.y > player.transform.position.y)
+            {
+                transform.position += Vector3.down * moveSpeed * Time.deltaTime;
+            }
+
+            if (transform.position.y < player.transform.position.y)
+            {
+                transform.position += Vector3.up * moveSpeed * Time.deltaTime;
+            }
+
         }
 
         else
