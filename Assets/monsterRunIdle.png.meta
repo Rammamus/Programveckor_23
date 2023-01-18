@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 965e534df3977624aaa557fc68a16d26
+guid: df0b86618320208418f36b96d4fa5e61
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_0
+      name: can_monster_programveckor_run_cycle-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 100
-        height: 155
+        width: 70
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23c8d9819f17d824c921d399481bfa9f
-      internalID: -928160949
+      spriteID: 7f914fb61d1d5194488f1120e9f63ca2
+      internalID: 1396582400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_1
+      name: can_monster_programveckor_run_cycle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 100
+        x: 83
         y: 0
-        width: 100
-        height: 155
+        width: 70
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d71c1115c6c2046a1a87d152aa30fe
-      internalID: 1339801114
+      spriteID: e8453efc326390047947b7ec97015053
+      internalID: 1291442999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_2
+      name: can_monster_programveckor_run_cycle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 200
+        x: 161
         y: 0
-        width: 100
-        height: 155
+        width: 70
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc899c1bd03a0f642bb74c7d2e409c14
-      internalID: 1217935062
+      spriteID: 2f18d49232d0346439b56ee8fbe4c0a1
+      internalID: -1378482639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_3
+      name: can_monster_programveckor_run_cycle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 240
         y: 0
-        width: 100
-        height: 155
+        width: 70
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccb923df333660e45914087efbea7e02
-      internalID: -436374143
+      spriteID: 0cff698bfad321e40a97046921ed0e9e
+      internalID: 1786557749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_4
+      name: can_monster_programveckor_run_cycle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 400
+        x: 312
         y: 0
-        width: 100
-        height: 155
+        width: 70
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fb822ff8ad01d948938c6070bd88467
-      internalID: 667462495
+      spriteID: 96190280dc348e941bc39a9eb2beb5aa
+      internalID: -1389881762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_5
+      name: can_monster_programveckor_run_cycle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 500
+        x: 386
         y: 0
-        width: 100
-        height: 155
+        width: 76
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47d68ef075f32b74095f12786524dc45
-      internalID: -1913848435
+      spriteID: 1ad0279154c60854294547629200dc26
+      internalID: 490635451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_run_cyle_axe-Sheet_6
+      name: can_monster_programveckor_run_cycle-Sheet_6
       rect:
         serializedVersion: 2
-        x: 600
+        x: 463
         y: 0
-        width: 100
-        height: 155
+        width: 74
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,8 +257,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f86ab098fe557b94bb9c7c62936172a4
-      internalID: 1610837602
+      spriteID: 1c77d720f71f9cb4cb15dcb41f7b8bc5
+      internalID: 1713377103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: can_monster_programveckor_run_cycle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 0
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca95b7b7f66491d428eafbbd501deb30
+      internalID: -749071436
       vertices: []
       indices: 
       edges: []
@@ -274,13 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MC_run_cyle_axe-Sheet_5: -1913848435
-      MC_run_cyle_axe-Sheet_1: 1339801114
-      MC_run_cyle_axe-Sheet_4: 667462495
-      MC_run_cyle_axe-Sheet_0: -928160949
-      MC_run_cyle_axe-Sheet_6: 1610837602
-      MC_run_cyle_axe-Sheet_3: -436374143
-      MC_run_cyle_axe-Sheet_2: 1217935062
+      can_monster_programveckor_run_cycle-Sheet_3: 1786557749
+      can_monster_programveckor_run_cycle-Sheet_5: 490635451
+      can_monster_programveckor_run_cycle-Sheet_1: 1291442999
+      can_monster_programveckor_run_cycle-Sheet_7: -749071436
+      can_monster_programveckor_run_cycle-Sheet_4: -1389881762
+      can_monster_programveckor_run_cycle-Sheet_2: -1378482639
+      can_monster_programveckor_run_cycle-Sheet_0: 1396582400
+      can_monster_programveckor_run_cycle-Sheet_6: 1713377103
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -7,11 +7,11 @@ public class BossMove: MonoBehaviour
     public float chaseDistance;
     public bool isChasing;
     public float moveSpeed;
-    public kar‰ktar player;
+    public kar√§ktar player;
 
     private float activeMovespeed;
     private float dachspeed;
-    public float bossrange = 10; // ‰ndra 10an senare
+    public float bossrange = 10; // √§ndra 10an senare
     public string target;
 
     private float dashlength = 5f, dashCoolDown = 1f;
@@ -22,13 +22,13 @@ public class BossMove: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        activeMovespeed = moveSpeed;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.FindObjectOfType<kar‰ktar>();
+        player = GameObject.FindObjectOfType<kar√§ktar>();
 
         if (isChasing)
         {
@@ -62,34 +62,6 @@ public class BossMove: MonoBehaviour
                     patrolDestination = 1;
                 }
             }*/
-     
-      
         } 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (dashCoolCounter <=0 && dashCaunter <= 0)
-            {
-                activeMovespeed = dachspeed;
-                dashCaunter = dashlength;
-            }
-        }
-        if (dashCaunter > 0)
-        {
-            dashCaunter -= Time.deltaTime;
-
-            if (dashCaunter <= 0)
-            {
-                activeMovespeed = moveSpeed;
-                dashCoolCounter = dashCoolDown;
-            }
-        }
-
-        if (dashCoolCounter > 0)
-        {
-            dashCoolCounter -= Time.deltaTime;
-        }
-
     } 
-
-
 }
