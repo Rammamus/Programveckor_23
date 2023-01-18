@@ -127,8 +127,6 @@ MonoBehaviour:
   dashSpeed: 10
   dashDistance: 5
   coolDown: 2
-  enemyCanDash: 0
-  isCapableOfDash: 1
   enemyHP: 0
   enemyDMG: 0
   enemySpeed: 0
@@ -136,6 +134,7 @@ MonoBehaviour:
   isMedium: 1
   isHard: 0
   isImpossible: 0
+  player: {fileID: 0}
   isDog: 1
   isGlass: 0
   isBabyGlass: 0
