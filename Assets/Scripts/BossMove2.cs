@@ -11,6 +11,7 @@ public class BossMove2 : MonoBehaviour
     public Transform player;
     public karäktar kr;
     public BossMove bm;
+    bool tryingToDash;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +25,17 @@ public class BossMove2 : MonoBehaviour
         float dist = Vector3.Distance(player.transform.position, transform.position);
         if (dist <= bm.bossrange && canDash)
         {
-            StartCoroutine(DashMovementHandler());
+            print("Start Dash");
+            if (tryingToDash == false)
+            {
+                StartCoroutine(DashMovementHandler());
+            }
+            
             if (isDashing && !isPreparingForDash)
-                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * kr.playSpeed * 20); 
+            {
+                print("Dash");
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * kr.playSpeed * 20); // sänk fart samt gör så att shop och power inte ändrar, fixa playspeed.
+            }
         }
         else
         {
@@ -35,12 +44,14 @@ public class BossMove2 : MonoBehaviour
     }
     IEnumerator DashMovementHandler()
     {
-        canDash = false;
+        tryingToDash = true;
+        canDash = true;
         isPreparingForDash = true;
 
         yield return new WaitForSeconds(0.2f);
         isDashing = true;
         isPreparingForDash = false;
+        print("trying");
 
         yield return new WaitForSeconds(1f);
         canDash = false;
@@ -48,6 +59,7 @@ public class BossMove2 : MonoBehaviour
 
         yield return new WaitForSeconds(4f);
         canDash = true;
+        tryingToDash = false;
         print("did he?");
     }
 }
