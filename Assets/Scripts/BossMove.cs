@@ -37,13 +37,13 @@ public class BossMove: MonoBehaviour
         {
             if(transform.position.x > player.transform.position.x)
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(-3.6661f, 3.6661f, 3.6661f);
                 transform.position += Vector3.left * moveSpeed * Time.deltaTime;
             }
                
             if (transform.position.x < player.transform.position.x) 
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(3.6661f, 3.6661f, 3.6661f);
                 transform.position += Vector3.right * moveSpeed * Time.deltaTime;
             }
 
