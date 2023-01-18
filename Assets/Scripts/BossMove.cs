@@ -7,7 +7,7 @@ public class BossMove: MonoBehaviour
     public float chaseDistance;
     public bool isChasing;
     public float moveSpeed;
-    public karäktar player;
+    public GameObject player;
 
     private float activeMovespeed;
     private float dachspeed;
@@ -22,13 +22,14 @@ public class BossMove: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.FindObjectOfType<karäktar>();
+        
 
         if (isChasing)
         {
