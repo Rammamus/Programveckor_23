@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //stats for enemies - Adrian
-    public float enemyHP;
-    public float enemyDMG;
-    public float enemySpeed;
-
     public bool isEasy = false;
     public bool isMedium = false;
     public bool isHard = false;
@@ -47,50 +42,47 @@ public class Enemy : MonoBehaviour
     //REMEMBER TO MAKE A CONDITION FOR THIS - Adrian
     public bool inPlayProx = false;
 
+    // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
-        //checks enemy type and changes stats accordingly - Adrian
-        if (isDog == true)
-        {
-            enemyHP = dog.hp;
-            enemyDMG = dog.dmg;
-            enemySpeed = dog.speed;
-        }
-        else if (isGlass == true)
-        {
-            enemyHP = glass.hp;
-            enemyDMG = glass.dmg;
-            enemySpeed = glass.speed;
-        }
-        else if (isBabyGlass)
-        {
-            enemyHP = babyGlass.hp;
-            enemyDMG = babyGlass.dmg;
-            enemySpeed = babyGlass.speed;
-        }
-
-        //changes enemy stats with game difficulty - Casper
         if (isEasy == true)
         {
-            enemyHP *= 0.5f;
-            enemyDMG *= 0.5f;
+            dog.hp *= 0.5f;
+            dog.dmg *= 0.5f;
+            glass.hp *= 0.5f;
+            glass.dmg *= 0.5f;
+            babyGlass.hp *= 0.5f;
+            babyGlass.dmg *= 0.5f;
+            
         }
         if (isMedium == true)
         {
-            enemyHP *= 1f;
-            enemyDMG *= 1f;
+            dog.hp *= 1f;
+            dog.dmg *= 1f;
+            glass.hp *= 1f;
+            glass.dmg *= 1f;
+            babyGlass.hp *= 1f;
+            babyGlass.dmg *= 1f;
         }
         if(isHard == true)
         {
-            enemyHP *= 1.25f;
-            enemyDMG *= 1.5f;
+            dog.hp *= 1.25f;
+            dog.dmg *= 1.5f;
+            glass.hp *= 1.25f;
+            glass.dmg *= 1.5f;
+            babyGlass.hp *= 1.25f;
+            babyGlass.dmg *= 1.5f;
         }
         if (isImpossible == true)
         {
-            enemyHP *= 1.5f;
-            enemyDMG *= 2.5f;
+            dog.hp *= 1.5f;
+            dog.dmg *= 2.5f;
+            glass.hp *= 1.5f;
+            glass.dmg *= 2.5f;
+            babyGlass.hp *= 1.5f;
+            babyGlass.dmg *= 2.5f;
         }
     }
 
@@ -98,34 +90,43 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Swarm();
-
-        if (enemyHP <= 0)
-        {
-            Destroy(this.gameObject);
-        }
     }
 
 
     //makes enemies move towareds player - William
     private void Swarm()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemySpeed * Time.deltaTime);
+        if (isDog == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, dog.speed * Time.deltaTime);
+        }
+        if (isGlass == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, glass.speed * Time.deltaTime);
+        }
+        if (isBabyGlass == true)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, babyGlass.speed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Player"))
         {
-            if (collider.GetComponent<karäktar>() != null)
+            //checks the different enemy types to select right amount of damage - Adrian
+            if(collider.GetComponent<karäktar>( ) != null && isDog == true)
             {
-                collider.GetComponent<karäktar>().playHP -= enemyDMG;
+                collider.GetComponent<karäktar>().playHP -= dog.dmg;
             }
-        }
-        if (collider.CompareTag("Attack"))
-        {
-            enemyHP -= GameObject.FindObjectOfType<karäktar>().playDMG;
-            print("it hits");
-            print("enemy HP: " + enemyHP);
+            if (collider.GetComponent<karäktar>() != null && isGlass == true)
+            {
+                collider.GetComponent<karäktar>().playHP -= glass.dmg;
+            }
+            if (collider.GetComponent<karäktar>() != null && isBabyGlass == true)
+            {
+                collider.GetComponent<karäktar>().playHP -= babyGlass.dmg;
+            }
         }
     }
 
