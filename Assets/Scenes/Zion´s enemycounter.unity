@@ -189,7 +189,7 @@ SpriteRenderer:
   m_Size: {x: 1.06, y: 1.55}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &166153720
@@ -263,6 +263,7 @@ MonoBehaviour:
   attack: {fileID: 0}
   isAttacking: 0
   anim: {fileID: 0}
+  sR: {fileID: 0}
   boxCollider: {fileID: 0}
   up: 119
   down: 115
@@ -276,8 +277,10 @@ MonoBehaviour:
   playAttackSpeed: 0
   playDMG: 0
   dash: {fileID: 0}
-  hurt: {fileID: 0}
   powerUp: {fileID: 0}
+  axeSlash: {fileID: 0}
+  swordSlash: {fileID: 0}
+  sounds: []
   usingSword: 0
   usingAxe: 0
 --- !u!212 &712542953
@@ -418,11 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c01122eeb9fa2d4792ca825a2c4077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 10
-  dashDistance: 5
-  coolDown: 2
-  enemyCanDash: 0
-  isCapableOfDash: 0
   enemyHP: 0
   enemyDMG: 0
   enemySpeed: 1
@@ -431,6 +429,8 @@ MonoBehaviour:
   isHard: 0
   isImpossible: 0
   anima: {fileID: 954821611}
+  sR: {fileID: 0}
+  "karakt\xE4r": {fileID: 712542951}
   isDog: 1
   isGlass: 0
   isBabyGlass: 0

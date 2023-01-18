@@ -44,6 +44,8 @@ public class Enemy : MonoBehaviour
 
     private GameObject player;
     private GameObject testEnemy;
+    public karäktar karaktär;
+    Vector3 dir;
 
     //Checks what enemy type it is - Adrian
     [SerializeField] public bool isDog = false;
@@ -126,18 +128,18 @@ public class Enemy : MonoBehaviour
             }
         }
         // will switch side of monster - Zion
-        if (player.transform.position -  Vector3(-3, 0,0)) 
+        if (dir.x > 0) 
         {
             if (true)
             {
-                sR.flipX = true;
+                sR.flipX = false;
             }
             if (sR != null)
             {
                 sR.flipX = true;
             }
         }
-        if (player.transform.position - Vector3(-3, 0,0))
+        if (dir.x < 0)
         {
             if (true)
             {
