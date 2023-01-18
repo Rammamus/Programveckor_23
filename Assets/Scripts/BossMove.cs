@@ -14,7 +14,7 @@ public class BossMove: MonoBehaviour
 
     private float dashlength = 5f, dashCoolDown = 1f;
 
-    private float dashCaunter;
+    private float dashCounter;
     private float dashCoolCounter;
 
     // Start is called before the first frame update
@@ -65,17 +65,18 @@ public class BossMove: MonoBehaviour
         } 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (dashCoolCounter <=0 && dashCaunter <= 0)
+            print("spacebar");
+            if (dashCoolCounter <=0 && dashCounter <= 0)
             {
                 activeMovespeed = dachspeed;
-                dashCaunter = dashlength;
+                dashCounter = dashlength;
             }
         }
-        if (dashCaunter > 0)
+        if (dashCounter > 0)
         {
-            dashCaunter -= Time.deltaTime;
+            dashCounter -= Time.deltaTime;
 
-            if (dashCaunter <= 0)
+            if (dashCounter <= 0)
             {
                 activeMovespeed = moveSpeed;
                 dashCoolCounter = dashCoolDown;

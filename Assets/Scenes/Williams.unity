@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 2099404803}
   - component: {fileID: 2099404805}
   - component: {fileID: 2099404804}
+  - component: {fileID: 2099404806}
   m_Layer: 0
   m_Name: player test
   m_TagString: Player
@@ -1127,6 +1128,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2099404806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099404801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e1d87024a34814ca5cf8da758f972c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+  isAttacking: 0
+  anim: {fileID: 0}
+  sR: {fileID: 0}
+  boxCollider: {fileID: 0}
+  up: 119
+  down: 115
+  "v\xE4nster": 97
+  "h\xF6ger": 100
+  playSpeed: 1.6
+  tr: {fileID: 0}
+  rb: {fileID: 0}
+  playHP: 0
+  playMAXHP: 100
+  playAttackSpeed: 0
+  playDMG: 0
+  dash: {fileID: 0}
+  powerUp: {fileID: 0}
+  axeSlash: {fileID: 0}
+  swordSlash: {fileID: 0}
+  sounds: []
+  usingSword: 0
+  usingAxe: 0
 --- !u!1 &2106664559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1262,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4244838899256997514, guid: 8402a6f480f25914280c014aa93f5b39, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2099404806}
     - target: {fileID: 4244838899256997514, guid: 8402a6f480f25914280c014aa93f5b39, type: 3}
       propertyPath: isBigDog
       value: 1
