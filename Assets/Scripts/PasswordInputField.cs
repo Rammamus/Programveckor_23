@@ -22,8 +22,14 @@ public class PasswordInputField : MonoBehaviour
         {
             Debug.Log("Password accepted");
             print("bra");
-            dm.hardIsUnlock = true;
-            dm.impossibleisUnlock = true;
+            dm.gameObject.GetComponent<DifficultyMAnager>().hardIsUnlock = true;
+            dm.gameObject.GetComponent<DifficultyMAnager>().impossibleisUnlock = true;
+            dm.gameObject.GetComponent<DifficultyMAnager>().hardIsBeat = true;
+            dm.gameObject.GetComponent<DifficultyMAnager>().mediumIsBeat = true;
+        }
+        else
+        {
+            print("wrong");
         }
     }
 }

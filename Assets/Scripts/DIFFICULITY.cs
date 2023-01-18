@@ -22,5 +22,6 @@ public class DIFFICULITY : MonoBehaviour
     public void ImpossibleDiff()
     {
         em.gameObject.GetComponent<Enemy>().isImpossible = true;
+        
     }
 }
