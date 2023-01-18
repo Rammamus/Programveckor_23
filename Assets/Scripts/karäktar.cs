@@ -56,6 +56,9 @@ public class karäktar : MonoBehaviour
     public bool usingAxe = false;
 
     //Creates weapons - Zion
+
+
+    SpriteRenderer sprite;
     class Weapons
     {
         public string name;
@@ -219,7 +222,8 @@ public class karäktar : MonoBehaviour
         {
             source.clip = sounds[Random.Range(0, sounds.Length)];
             source.PlayOneShot(source.clip);
-           
+            sprite.color = Color.red;
+            sprite.color = Color.white;
         }
     }
 
