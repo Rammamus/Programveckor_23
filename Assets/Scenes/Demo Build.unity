@@ -316,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485507258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.46, y: 2.8, z: 1.9294611}
+  m_LocalPosition: {x: 0.07, y: -8.51, z: 1.9294611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -400,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595032899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.65, y: 2.91, z: 1.9294611}
+  m_LocalPosition: {x: -7.47, y: -8.54, z: 1.9294611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -832,7 +832,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088035234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.03, y: 0.1, z: 1.9294611}
+  m_LocalPosition: {x: -12.94, y: -2.27, z: 1.9294611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1083,6 +1083,7 @@ MonoBehaviour:
   attack: {fileID: 650844706}
   isAttacking: 0
   anim: {fileID: 0}
+  sR: {fileID: 0}
   boxCollider: {fileID: 0}
   up: 119
   down: 115
@@ -1096,8 +1097,10 @@ MonoBehaviour:
   playAttackSpeed: 0
   playDMG: 20
   dash: {fileID: 0}
-  hurt: {fileID: 0}
   powerUp: {fileID: 0}
+  axeSlash: {fileID: 0}
+  swordSlash: {fileID: 0}
+  sounds: []
   usingSword: 0
   usingAxe: 0
 --- !u!212 &1136043894
@@ -1633,7 +1636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759205107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.07, y: -0.36, z: 1.9294611}
+  m_LocalPosition: {x: 5.9, y: -2.73, z: 1.9294611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
