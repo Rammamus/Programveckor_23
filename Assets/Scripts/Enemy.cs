@@ -89,9 +89,14 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Swarm();
-    }
+        Swarm(); //Enemy always follow player - William
 
+        //Enemy die if 0hp or under - Adrian
+        if (enemyHP <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     //makes enemies move towareds player - William
     private void Swarm()
@@ -115,18 +120,22 @@ public class Enemy : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             //checks the different enemy types to select right amount of damage - Adrian
-            if(collider.GetComponent<karäktar>( ) != null && isDog == true)
+            if(collider.GetComponent<karï¿½ktar>( ) != null && isDog == true)
             {
-                collider.GetComponent<karäktar>().playHP -= dog.dmg;
+                collider.GetComponent<karï¿½ktar>().playHP -= dog.dmg;
             }
-            if (collider.GetComponent<karäktar>() != null && isGlass == true)
+            if (collider.GetComponent<karï¿½ktar>() != null && isGlass == true)
             {
-                collider.GetComponent<karäktar>().playHP -= glass.dmg;
+                collider.GetComponent<karï¿½ktar>().playHP -= glass.dmg;
             }
-            if (collider.GetComponent<karäktar>() != null && isBabyGlass == true)
+            if (collider.GetComponent<karï¿½ktar>() != null && isBabyGlass == true)
             {
-                collider.GetComponent<karäktar>().playHP -= babyGlass.dmg;
+                collider.GetComponent<karï¿½ktar>().playHP -= babyGlass.dmg;
             }
+        }
+        if (collider.CompareTag("Attack"))
+        {
+            enemyHP -= GameObject.FindObjectOfType<karï¿½ktar>().playDMG;
         }
     }
 

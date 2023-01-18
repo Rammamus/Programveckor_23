@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Attack
+  - PlayProximity
   layers:
   - Default
   - TransparentFX

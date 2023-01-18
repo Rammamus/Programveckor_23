@@ -8,10 +8,19 @@ public class BossMove: MonoBehaviour
     public bool isChasing;
     public float moveSpeed;
     public karäktar player;
+
+    private float activeMovespeed;
+    private float dachspeed;
+
+    private float dashlength = 5f, dashCoolDown = 1f;
+
+    private float dashCounter;
+    private float dashCoolCounter;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        activeMovespeed = moveSpeed;
     }
 
     // Update is called once per frame
@@ -51,6 +60,35 @@ public class BossMove: MonoBehaviour
                     patrolDestination = 1;
                 }
             }*/
+     
+      
         } 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("spacebar");
+            if (dashCoolCounter <=0 && dashCounter <= 0)
+            {
+                activeMovespeed = dachspeed;
+                dashCounter = dashlength;
+            }
+        }
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter <= 0)
+            {
+                activeMovespeed = moveSpeed;
+                dashCoolCounter = dashCoolDown;
+            }
+        }
+
+        if (dashCoolCounter > 0)
+        {
+            dashCoolCounter -= Time.deltaTime;
+        }
+
     } 
+
+
 }
