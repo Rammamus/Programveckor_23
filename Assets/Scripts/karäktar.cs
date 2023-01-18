@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class kar�ktar : MonoBehaviour
+public class karäktar : MonoBehaviour
 
 {
     //Variables for attacking - Adrian
