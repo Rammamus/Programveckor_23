@@ -11,9 +11,11 @@ public class TrashBinSpawner : MonoBehaviour
     public int enemyCount = 0;
     [SerializeField] public int maxEnemy;
     bool canSpawn = true;
-
+    public Animator amM;
+    bool isSpawningM = true;
     private void start()
     {
+        amM = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -24,6 +26,14 @@ public class TrashBinSpawner : MonoBehaviour
             Instantiate(ProjectilePreFab, LaunchOffset.position, transform.rotation);
             enemySpawnTime = 0;
             enemyCount++;
+        }
+        if (canSpawn == true)
+        {
+            amM.SetBool("isSpawningM", true);
+            if (amM != null)
+            {
+                isSpawningM = false;
+            }
         }
     }
 }

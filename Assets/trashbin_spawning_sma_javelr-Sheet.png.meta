@@ -115,7 +115,1057 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 215
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283966c30617bfd40bd05c10fad741c3
+      internalID: -205237835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64e80b598258954d96f5852296dcc37
+      internalID: -835982997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1700375f1ee94b4dbbdda57edb0fb67
+      internalID: -1551832038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6544b5368ad9343b4ff0f40bf21d01
+      internalID: 1282362599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cb8f2e619e4164eaa12e4561100be4
+      internalID: -2140647358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee777ca0a4a5c224d884780ae62c9879
+      internalID: 93623619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d93314765544748bf1de6bd12f4a1e
+      internalID: 172022135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c59c3f4c6977240b5c52437b089a0b
+      internalID: 1346201310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1a778a8ba71b1468187090623676bb
+      internalID: 270969479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219534b745a0b274bb89f02392d4ef20
+      internalID: 1528820176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc599383574cd54bb8417cb1615da32
+      internalID: 431718863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a43d06dcbd1c5478efc77e5a3a78e4
+      internalID: -1107351389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9eee3942bbb1fd448d42a93144f0c3e
+      internalID: -847864562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a031a3268d7b9438ad790f2736dc28
+      internalID: 1076564397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1eaf9802565bfc4f86860aade13bb89
+      internalID: 22101507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8377e986a9fcbc246bc7a9e41ef17c59
+      internalID: 1981952541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17406a88b4556654fb20bceac71dc467
+      internalID: -1144245327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14aa6cccac04ab5468bf2ae806f83ee3
+      internalID: -1098934183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3870
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff48fc4fe27b6c84b8e6ba7d769220e7
+      internalID: 41294701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 4085
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eae9cc5749b4546b16af757b11509d
+      internalID: 1345335338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41197c8f459e894baaf4ac1053e5658
+      internalID: -1390792794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a8618ca9e8e224fb0de4907715f59a
+      internalID: 986966654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 4730
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d1d817b0860ac4cbe946b01eca99a1
+      internalID: -302486923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4945
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01c00d2fcd437341a519dd61ebb7f74
+      internalID: -1411681374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 5160
+        y: 170
+        width: 215
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e91c0017c15adb4190ae83fb011b6c0
+      internalID: -388573290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b6b7b9276966448983add2c7b720c5
+      internalID: -39206405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2765e4782179e8459bae7f6e1864c59
+      internalID: -2084638027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be2e2b7793861c40976b18f99021d0d
+      internalID: -1010688714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40a7e0200115e048be43d20e3d04504
+      internalID: 658194753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d7d2547f5a25b418eb70b3ca488869
+      internalID: -1142124122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76946669f625d0040b3376cc5389c12d
+      internalID: 1207602385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7741733ad07d549b5931113b0d58e6
+      internalID: -189001483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515490123b844fe4082f5d28ee39bc14
+      internalID: -2013000932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61730ef1052df4aad555af72e1496f
+      internalID: -106953905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e80741b0c2c5c4c879a04755fcdf69
+      internalID: 896373651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e3a764f43c1b84c8b8e8b1698c2dd6
+      internalID: -373248388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9e60aa95ee4554ab8b4e68ca455a92
+      internalID: 237703137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc5f8b8dbbf6784ea95fdc3135b4f20
+      internalID: 1556670584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b56eff9fc15cd44ba999eb662c5966
+      internalID: 1890216229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73994f628ab76e148a34bd221fef8256
+      internalID: 927480722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4baef45ee8a934ca4d2b5ff53197dd
+      internalID: -1811059829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f87f9c541bde643a105a3bc40ff96c
+      internalID: 968991495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56721cafc35af544a9ac74fbe53a471
+      internalID: -59689070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 3870
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59174a564f697bd4dbd2beb0e27b6520
+      internalID: -265713982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 4085
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa089fd6d3672240923f6d97aaf877c
+      internalID: 23063134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 4300
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a777f795251a04fb0447f641cf491b
+      internalID: -1392968077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028ec9cc23ab2994794e643cf66a8e5d
+      internalID: 1056372534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 4730
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787d8ef13c1521b4c8c06614b22bfca8
+      internalID: 2041600655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 4945
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181bf6614738f1e4f90f0fa19f5d5d05
+      internalID: -421172469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trashbin_spawning_sma_javelr-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 5160
+        y: 1
+        width: 215
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5478162d8523d8e44a4c1b8a52f9b3e6
+      internalID: 744064136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +1176,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trashbin_spawning_sma_javelr-Sheet_15: 1981952541
+      trashbin_spawning_sma_javelr-Sheet_38: 1890216229
+      trashbin_spawning_sma_javelr-Sheet_11: -1107351389
+      trashbin_spawning_sma_javelr-Sheet_49: 744064136
+      trashbin_spawning_sma_javelr-Sheet_16: -1144245327
+      trashbin_spawning_sma_javelr-Sheet_34: 896373651
+      trashbin_spawning_sma_javelr-Sheet_40: -1811059829
+      trashbin_spawning_sma_javelr-Sheet_25: -39206405
+      trashbin_spawning_sma_javelr-Sheet_19: 1345335338
+      trashbin_spawning_sma_javelr-Sheet_2: -1551832038
+      trashbin_spawning_sma_javelr-Sheet_20: -1390792794
+      trashbin_spawning_sma_javelr-Sheet_45: -1392968077
+      trashbin_spawning_sma_javelr-Sheet_26: -2084638027
+      trashbin_spawning_sma_javelr-Sheet_42: -59689070
+      trashbin_spawning_sma_javelr-Sheet_43: -265713982
+      trashbin_spawning_sma_javelr-Sheet_17: -1098934183
+      trashbin_spawning_sma_javelr-Sheet_4: -2140647358
+      trashbin_spawning_sma_javelr-Sheet_30: 1207602385
+      trashbin_spawning_sma_javelr-Sheet_35: -373248388
+      trashbin_spawning_sma_javelr-Sheet_8: 270969479
+      trashbin_spawning_sma_javelr-Sheet_10: 431718863
+      trashbin_spawning_sma_javelr-Sheet_46: 1056372534
+      trashbin_spawning_sma_javelr-Sheet_18: 41294701
+      trashbin_spawning_sma_javelr-Sheet_37: 1556670584
+      trashbin_spawning_sma_javelr-Sheet_12: -847864562
+      trashbin_spawning_sma_javelr-Sheet_21: 986966654
+      trashbin_spawning_sma_javelr-Sheet_9: 1528820176
+      trashbin_spawning_sma_javelr-Sheet_22: -302486923
+      trashbin_spawning_sma_javelr-Sheet_48: -421172469
+      trashbin_spawning_sma_javelr-Sheet_0: -205237835
+      trashbin_spawning_sma_javelr-Sheet_31: -189001483
+      trashbin_spawning_sma_javelr-Sheet_36: 237703137
+      trashbin_spawning_sma_javelr-Sheet_33: -106953905
+      trashbin_spawning_sma_javelr-Sheet_24: -388573290
+      trashbin_spawning_sma_javelr-Sheet_39: 927480722
+      trashbin_spawning_sma_javelr-Sheet_7: 1346201310
+      trashbin_spawning_sma_javelr-Sheet_23: -1411681374
+      trashbin_spawning_sma_javelr-Sheet_13: 1076564397
+      trashbin_spawning_sma_javelr-Sheet_41: 968991495
+      trashbin_spawning_sma_javelr-Sheet_5: 93623619
+      trashbin_spawning_sma_javelr-Sheet_14: 22101507
+      trashbin_spawning_sma_javelr-Sheet_32: -2013000932
+      trashbin_spawning_sma_javelr-Sheet_47: 2041600655
+      trashbin_spawning_sma_javelr-Sheet_27: -1010688714
+      trashbin_spawning_sma_javelr-Sheet_1: -835982997
+      trashbin_spawning_sma_javelr-Sheet_28: 658194753
+      trashbin_spawning_sma_javelr-Sheet_44: 23063134
+      trashbin_spawning_sma_javelr-Sheet_29: -1142124122
+      trashbin_spawning_sma_javelr-Sheet_6: 172022135
+      trashbin_spawning_sma_javelr-Sheet_3: 1282362599
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
