@@ -27,6 +27,8 @@ public class TrashBinSpawner : MonoBehaviour
             enemySpawnTime = 0;
             enemyCount++;
         }
+        
+        // animation for spawning monster-Zion
         if (canSpawn == true)
         {
             amM.SetBool("isSpawningM", true);

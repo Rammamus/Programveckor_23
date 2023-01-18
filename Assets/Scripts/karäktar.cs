@@ -14,8 +14,8 @@ public class karäktar : MonoBehaviour
     public Animator runningAnimation;
     public Animator slicingAnimation;
     bool isrunning = true;
-    bool isrunningWA = true;
-    bool idle = true;
+    bool isrunningWAx = true;
+   
     // Variable for SpriteRenderer - Zion
     public SpriteRenderer sRSprint;
     public SpriteRenderer sRSlash;
@@ -129,6 +129,14 @@ public class karäktar : MonoBehaviour
             if ( runningAnimation != null)
             {
                 isrunning = false;// just standing - Zion
+            }
+        }
+        if (usingAxe == true)
+        {
+            runningAnimation.SetBool("isRunningWAx", true);
+            if ( usingAxe != null)
+            {
+                isrunningWAx = false;// just standing - Zion
             }
         }
         
