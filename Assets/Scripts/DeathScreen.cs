@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathScreen : MonoBehaviour
 {
@@ -45,4 +46,12 @@ public class DeathScreen : MonoBehaviour
             Activate_deathscreen();
         }
     }
+
+    public void Lobby ()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); 
+        
+
+    }
+
 }
