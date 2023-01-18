@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //DASH GAMING - Adrian
-    public float dashSpeed = 10f;
-    public float dashDistance = 5f;
-    public float coolDown = 2f;
-    private float nextDash;
-    public bool enemyCanDash = false;
-    public bool isCapableOfDash = false;
-
     //stats for enemies - Adrian
     public float enemyHP;
     public float enemyDMG;
@@ -20,7 +12,13 @@ public class Enemy : MonoBehaviour
     public bool isEasy = false;
     public bool isMedium = false;
     public bool isHard = false;
-    public bool isImpossible = false; 
+    public bool isImpossible = false;
+
+    // Variables for animation - Zion
+    public Animator anima;
+    bool isrunningM = true;
+    // Variable for SpriteRenderer - Zion
+    public SpriteRenderer sR;
 
     //allows for creating different enemy types - Adrian
     class Enemies
@@ -45,6 +43,7 @@ public class Enemy : MonoBehaviour
     Enemies babyGlass = new Enemies("Baby Glass", 20, 7.5f, 2.5f);
 
     private GameObject player;
+    private GameObject testEnemy;
 
     //Checks what enemy type it is - Adrian
     [SerializeField] public bool isDog = false;
@@ -57,8 +56,10 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        testEnemy = GameObject.FindGameObjectWithTag("Enemy");
+        anima = GetComponent<Animator>();
+        sR = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
-        nextDash = Time.time;
 
         //checks enemy type and changes stats accordingly - Adrian
         if (isDog == true)
@@ -66,7 +67,6 @@ public class Enemy : MonoBehaviour
             enemyHP = dog.hp;
             enemyDMG = dog.dmg;
             enemySpeed = dog.speed;
-            isCapableOfDash = true;
         }
         else if (isGlass == true)
         {
@@ -79,7 +79,6 @@ public class Enemy : MonoBehaviour
             enemyHP = babyGlass.hp;
             enemyDMG = babyGlass.dmg;
             enemySpeed = babyGlass.speed;
-            isCapableOfDash = true;
         }
 
         //changes enemy stats with game difficulty - Casper
@@ -116,20 +115,36 @@ public class Enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        //enemy dashes if they - Adrian
-        if (Time.time > nextDash && isCapableOfDash == true)
-        {
-            Dash();
-            nextDash = Time.time + coolDown;
-        }
-    }
+        // The Animation for monster run cycle- Zion
 
-    //Enemy dash function - Adrian
-    void Dash()
-    {
-        print("He's trying his best");
-        Vector3 dashDirection = (player.transform.position - transform.position);
-        transform.position = Vector3.MoveTowards(transform.position, transform.position + dashDirection, dashSpeed * Time.deltaTime);
+        if (isrunningM == true)
+        {
+            anima.SetBool("isrunningM", true);
+            if (anima != null)
+            {
+                isrunningM = false;
+            }
+        }
+        // will switch side of monster - Zion
+        if (player.transform.position -  Vector3(-3, 0,0)) 
+        {
+            if (true)
+            {
+                sR.flipX = true;
+            }
+            if (sR != null)
+            {
+                sR.flipX = true;
+            }
+        }
+        if (player.transform.position - Vector3(-3, 0,0))
+        {
+            if (true)
+            {
+                sR.flipX = false;
+            }
+
+        }
     }
 
     //makes enemies move towareds player - William
@@ -146,10 +161,6 @@ public class Enemy : MonoBehaviour
             {
                 collider.GetComponent<karäktar>().playHP -= enemyDMG;
             }
-        }
-        if (collider.CompareTag("PlayProximity"))
-        {
-            enemyCanDash = true;
         }
         if (collider.CompareTag("Attack"))
         {

@@ -16,9 +16,9 @@ public class karäktar : MonoBehaviour
     bool isrunning = true;
     bool isrunningWA = true;
     bool idle = true;
-    // Variables for SpriteRenderer - Zion
+    // Variable for SpriteRenderer - Zion
     public SpriteRenderer sR;
-    bool FlipX = true;
+   
    
 
 
