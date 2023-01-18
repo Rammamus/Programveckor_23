@@ -14,6 +14,15 @@ public class DeathScreen : MonoBehaviour
     public void Activate_pausemenu()
     {
         pausePanel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void DeActivate_pausemenu()
+    {
+        pausePanel.SetActive(false);
+        gamePaused = false;
+        Time.timeScale = 1;
+        print("deactive");
     }
     public void Activate_deathscreen()
     {
@@ -24,17 +33,12 @@ public class DeathScreen : MonoBehaviour
         //condition for game pause - Adrian
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            gamePaused = true;
+            Activate_pausemenu();
         }
         //condition for death screen - Adrian
         if (player.GetComponent<karäktar>().playHP <= 0)
         {
             deathScreen = true;
-        }
-
-        if (gamePaused)
-        {
-            Activate_pausemenu();
         }
         if (deathScreen)
         {
