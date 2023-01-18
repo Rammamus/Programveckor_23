@@ -78,6 +78,7 @@ public class karäktar : MonoBehaviour
         playHP = playMAXHP;
         anim = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
+        sR = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -116,7 +117,7 @@ public class karäktar : MonoBehaviour
         }
 
         // The Animation for run cycle- Zion, have not drawn the character
-        /*
+      
         if (isrunning == true)
         {
             anim.SetBool("isRunning",true);
@@ -125,7 +126,7 @@ public class karäktar : MonoBehaviour
                 isrunning = false;// just standing - Zion
             }
         }
-        */
+        
         
         //check what weapon is used - Zion
         if (usingAxe == true)
@@ -140,6 +141,28 @@ public class karäktar : MonoBehaviour
             playDMG = sword.dmg;
             
         }
+        
+        // the player will switch
+        if (Input.GetKey(vänster))
+        {
+            if (true)
+            {
+                sR.flipX = true;
+            }
+            if (sR != null)
+            {
+                sR.flipX = true;
+            }
+        }
+        if (Input.GetKey(höger))
+        {
+            if (true)
+            {
+                sR.flipX = false;
+            }
+
+        }
+
 
         //Both activates the attack object and sets a duration timer that deactivates it - Adrian
         timer += Time.deltaTime;
