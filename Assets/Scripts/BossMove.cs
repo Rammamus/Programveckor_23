@@ -11,6 +11,8 @@ public class BossMove: MonoBehaviour
 
     private float activeMovespeed;
     private float dachspeed;
+    public float bossrange = 10; // ändra 10an senare
+    public string target;
 
     private float dashlength = 5f, dashCoolDown = 1f;
 
