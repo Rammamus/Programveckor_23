@@ -17,6 +17,10 @@ public class Enemy : MonoBehaviour
     // Variables for animation - Zion
     public Animator anima;
     bool isrunningM = true;
+
+   
+    public float moveSpeed;
+
     // Variable for SpriteRenderer - Zion
     public SpriteRenderer sR;
 
@@ -58,6 +62,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+      
         testEnemy = GameObject.FindGameObjectWithTag("Enemy");
         anima = GetComponent<Animator>();
         sR = GetComponent<SpriteRenderer>();
@@ -128,28 +133,20 @@ public class Enemy : MonoBehaviour
             }
         }
         // will switch side of monster - Zion
-        if (dir.x > 0) 
+
+        if (transform.position.x < player.transform.position.x)
         {
-            if (true)
-            {
-                sR.flipX = false;
-            }
-            if (sR != null)
-            {
-                sR.flipX = true;
-            }
-            //sR.flipX = false;
-           // print("trying1");
+            transform.localScale = new Vector3(1, 1, 1);
+            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
         }
-        if (dir.x < 0)
+
+        if (transform.position.x > player.transform.position.x)
         {
-            if (true)
-            {
-                sR.flipX = false;
-            }
-            //sR.flipX = false;
-           // print("trying2");
+            transform.localScale = new Vector3(-1, 1, 1);
+            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
+
+
     }
 
     //makes enemies move towareds player - William
