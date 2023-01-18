@@ -14,6 +14,12 @@ public class Enemy : MonoBehaviour
     public bool isHard = false;
     public bool isImpossible = false;
 
+    // Variables for animation - Zion
+    public Animator anima;
+    bool isrunningM = true;
+    // Variable for SpriteRenderer - Zion
+    public SpriteRenderer sR;
+
     //allows for creating different enemy types - Adrian
     class Enemies
     {
@@ -37,6 +43,9 @@ public class Enemy : MonoBehaviour
     Enemies babyGlass = new Enemies("Baby Glass", 20, 7.5f, 2.5f);
 
     private GameObject player;
+    private GameObject testEnemy;
+    public kar√§ktar karakt√§r;
+    Vector3 dir;
 
     //Checks what enemy type it is - Adrian
     [SerializeField] public bool isDog = false;
@@ -49,6 +58,9 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        testEnemy = GameObject.FindGameObjectWithTag("Enemy");
+        anima = GetComponent<Animator>();
+        sR = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
 
         //checks enemy type and changes stats accordingly - Adrian
@@ -104,6 +116,37 @@ public class Enemy : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        // The Animation for monster run cycle- Zion
+
+        if (isrunningM == true)
+        {
+            anima.SetBool("isrunningM", true);
+            if (anima != null)
+            {
+                isrunningM = false;
+            }
+        }
+        // will switch side of monster - Zion
+        if (dir.x > 0) 
+        {
+            if (true)
+            {
+                sR.flipX = false;
+            }
+            if (sR != null)
+            {
+                sR.flipX = true;
+            }
+        }
+        if (dir.x < 0)
+        {
+            if (true)
+            {
+                sR.flipX = false;
+            }
+
+        }
     }
 
     //makes enemies move towareds player - William
@@ -116,14 +159,14 @@ public class Enemy : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            if (collider.GetComponent<kar‰ktar>() != null)
+            if (collider.GetComponent<kar√§ktar>() != null)
             {
-                collider.GetComponent<kar‰ktar>().playHP -= enemyDMG;
+                collider.GetComponent<kar√§ktar>().playHP -= enemyDMG;
             }
         }
         if (collider.CompareTag("Attack"))
         {
-            enemyHP -= GameObject.FindObjectOfType<kar‰ktar>().playDMG;
+            enemyHP -= GameObject.FindObjectOfType<kar√§ktar>().playDMG;
         }
     }
 

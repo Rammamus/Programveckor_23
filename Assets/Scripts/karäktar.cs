@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class kar‰ktar : MonoBehaviour
+public class kar√§ktar : MonoBehaviour
 
 {
     //Variables for attacking - Adrian
@@ -14,15 +14,21 @@ public class kar‰ktar : MonoBehaviour
     // Variables for animation - Zion
     public Animator anim;
     bool isrunning = true;
-    
-    
+    bool isrunningWA = true;
+    bool idle = true;
+    // Variable for SpriteRenderer - Zion
+    public SpriteRenderer sR;
+   
+   
+
+
 
     //Variables for movement and dash - Casper
     [SerializeField] BoxCollider2D boxCollider;
     [SerializeField] KeyCode up;
     [SerializeField] KeyCode down;
-    [SerializeField] KeyCode v‰nster;
-    [SerializeField] KeyCode hˆger;
+    [SerializeField] KeyCode v√§nster;
+    [SerializeField] KeyCode h√∂ger;
     [SerializeField] public float playSpeed = 1.6f;
     [SerializeField] TrailRenderer tr;
     [SerializeField] Rigidbody2D rb; 
@@ -81,11 +87,11 @@ public class kar‰ktar : MonoBehaviour
         {
             return; 
         }
-        if (Input.GetKey(v‰nster))
+        if (Input.GetKey(v√§nster))
         {
             transform.position += new Vector3(-3, 0, 0) * Time.deltaTime;
         }
-        if (Input.GetKey(hˆger))
+        if (Input.GetKey(h√∂ger))
         {
             transform.position += new Vector3(3, 0, 0) * Time.deltaTime;
         }
