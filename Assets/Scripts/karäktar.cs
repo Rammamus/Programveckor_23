@@ -14,14 +14,8 @@ public class karäktar : MonoBehaviour
     // Variables for animation - Zion
     public Animator anim;
     bool isrunning = true;
-    bool isrunningWA = true;
-    bool idle = true;
-    // Variables for SpriteRenderer - Zion
-    public SpriteRenderer sR;
-    bool FlipX = true;
-   
-
-
+    
+    
 
     //Variables for movement and dash - Casper
     [SerializeField] BoxCollider2D boxCollider;
@@ -78,7 +72,6 @@ public class karäktar : MonoBehaviour
         playHP = playMAXHP;
         anim = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
-        sR = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -116,8 +109,8 @@ public class karäktar : MonoBehaviour
             dash.Play();
         }
 
-        // The Animation for run cycle- Zion
-        
+        // The Animation for run cycle- Zion, have not drawn the character
+        /*
         if (isrunning == true)
         {
             anim.SetBool("isRunning",true);
@@ -126,38 +119,8 @@ public class karäktar : MonoBehaviour
                 isrunning = false;// just standing - Zion
             }
         }
-        if (usingAxe == true) // should switch to the player with axe
-        {
-            anim.SetBool("isRunningWA", true);
-            if (anim != null)
-            {
-                isrunningWA = false;
-                
-            }
-        }
-        // will switch side of player - Zion
-        if (Input.GetKey(vänster))
-        {
-            if (true)
-            {
-               sR.flipX = true;
-            }
-            if (sR != null)
-            {
-                sR.flipX = true;
-            }
-        }
-        if (Input.GetKey(höger))
-        {
-            if (true)
-            {
-                sR.flipX = false;
-            }
-            
-        }
-
-
-
+        */
+        
         //check what weapon is used - Zion
         if (usingAxe == true)
         {
@@ -200,7 +163,6 @@ public class karäktar : MonoBehaviour
 
             }
         }
-
     }
 
     //function for dashing right - Casper

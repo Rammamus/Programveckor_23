@@ -124,9 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c01122eeb9fa2d4792ca825a2c4077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 10
-  dashDistance: 5
-  coolDown: 2
   enemyHP: 0
   enemyDMG: 0
   enemySpeed: 0
@@ -134,7 +131,6 @@ MonoBehaviour:
   isMedium: 1
   isHard: 0
   isImpossible: 0
-  player: {fileID: 0}
   isDog: 1
   isGlass: 0
   isBabyGlass: 0
