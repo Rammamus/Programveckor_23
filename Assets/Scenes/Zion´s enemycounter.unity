@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 712542955}
   m_Layer: 0
   m_Name: pp
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: {fileID: 0}
   isAttacking: 0
-  anim: {fileID: 0}
+  anim: {fileID: 712542955}
   sR: {fileID: 0}
   boxCollider: {fileID: 0}
   up: 119
@@ -429,7 +429,7 @@ MonoBehaviour:
   isHard: 0
   isImpossible: 0
   anima: {fileID: 954821611}
-  sR: {fileID: 0}
+  sR: {fileID: 954821613}
   "karakt\xE4r": {fileID: 712542951}
   isDog: 1
   isGlass: 0

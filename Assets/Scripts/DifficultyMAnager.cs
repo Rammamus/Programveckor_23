@@ -51,6 +51,7 @@ public class DifficultyMAnager : MonoBehaviour
         {
             hardbutton.SetActive(true);
             hardlockedButton.SetActive(false);
+            print("hardunlock");
         }
 
         if (impossibleisUnlock == false)
@@ -62,6 +63,7 @@ public class DifficultyMAnager : MonoBehaviour
         {
             impossibleButton.SetActive(true);
             impossibleLockedButton.SetActive(false);
+            print("Impossibleunlock");
         }
     }
 }
