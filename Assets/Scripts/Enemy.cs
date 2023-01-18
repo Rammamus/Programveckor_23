@@ -138,6 +138,8 @@ public class Enemy : MonoBehaviour
             {
                 sR.flipX = true;
             }
+            //sR.flipX = false;
+           // print("trying1");
         }
         if (dir.x < 0)
         {
@@ -145,7 +147,8 @@ public class Enemy : MonoBehaviour
             {
                 sR.flipX = false;
             }
-
+            //sR.flipX = false;
+           // print("trying2");
         }
     }
 
