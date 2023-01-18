@@ -262,8 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: {fileID: 0}
   isAttacking: 0
-  anim: {fileID: 712542955}
-  sR: {fileID: 0}
+  anim: {fileID: 0}
   boxCollider: {fileID: 0}
   up: 119
   down: 115
@@ -277,10 +276,8 @@ MonoBehaviour:
   playAttackSpeed: 0
   playDMG: 0
   dash: {fileID: 0}
+  hurt: {fileID: 0}
   powerUp: {fileID: 0}
-  axeSlash: {fileID: 0}
-  swordSlash: {fileID: 0}
-  sounds: []
   usingSword: 0
   usingAxe: 0
 --- !u!212 &712542953

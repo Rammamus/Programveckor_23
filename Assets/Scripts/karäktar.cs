@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class karäktar : MonoBehaviour
+public class karï¿½ktar : MonoBehaviour
 
 {
     //Variables for attacking - Adrian
@@ -27,8 +27,8 @@ public class karäktar : MonoBehaviour
     [SerializeField] BoxCollider2D boxCollider;
     [SerializeField] KeyCode up;
     [SerializeField] KeyCode down;
-    [SerializeField] KeyCode vänster;
-    [SerializeField] KeyCode höger;
+    [SerializeField] KeyCode vÃ¤nster;
+    [SerializeField] KeyCode hÃ¶ger;
     [SerializeField] public float playSpeed = 1.6f;
     [SerializeField] TrailRenderer tr;
     [SerializeField] Rigidbody2D rb; 
@@ -78,7 +78,6 @@ public class karäktar : MonoBehaviour
         playHP = playMAXHP;
         anim = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
-        sR = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -88,11 +87,11 @@ public class karäktar : MonoBehaviour
         {
             return; 
         }
-        if (Input.GetKey(vänster))
+        if (Input.GetKey(vÃ¤nster))
         {
             transform.position += new Vector3(-3, 0, 0) * Time.deltaTime;
         }
-        if (Input.GetKey(höger))
+        if (Input.GetKey(hÃ¶ger))
         {
             transform.position += new Vector3(3, 0, 0) * Time.deltaTime;
         }
@@ -116,8 +115,8 @@ public class karäktar : MonoBehaviour
             dash.Play();
         }
 
-        // The Animation for run cycle- Zion
-        
+        // The Animation for run cycle- Zion, have not drawn the character
+        /*
         if (isrunning == true)
         {
             anim.SetBool("isRunning",true);
@@ -126,38 +125,8 @@ public class karäktar : MonoBehaviour
                 isrunning = false;// just standing - Zion
             }
         }
-        if (usingAxe == true) // should switch to the player with axe
-        {
-            anim.SetBool("isRunningWA", true);
-            if (anim != null)
-            {
-                isrunningWA = false;
-                
-            }
-        }
-        // will switch side of player - Zion
-        if (Input.GetKey(vänster))
-        {
-            if (true)
-            {
-               sR.flipX = true;
-            }
-            if (sR != null)
-            {
-                sR.flipX = true;
-            }
-        }
-        if (Input.GetKey(höger))
-        {
-            if (true)
-            {
-                sR.flipX = false;
-            }
-            
-        }
-
-
-
+        */
+        
         //check what weapon is used - Zion
         if (usingAxe == true)
         {
@@ -200,7 +169,6 @@ public class karäktar : MonoBehaviour
 
             }
         }
-
     }
 
     //function for dashing right - Casper

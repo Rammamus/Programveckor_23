@@ -92,7 +92,7 @@ public class Enemy : MonoBehaviour
             enemyHP *= 1f;
             enemyDMG *= 1f;
         }
-        if(isHard == true)
+        if (isHard == true)
         {
             enemyHP *= 1.25f;
             enemyDMG *= 1.5f;
@@ -157,15 +157,16 @@ public class Enemy : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            if (collider.GetComponent<karäktar>() != null)
+            if (collider.GetComponent<karÃ¤ktar>() != null)
             {
-                collider.GetComponent<karäktar>().playHP -= enemyDMG;
+                collider.GetComponent<karÃ¤ktar>().playHP -= enemyDMG;
             }
         }
         if (collider.CompareTag("Attack"))
         {
-            enemyHP -= GameObject.FindObjectOfType<karäktar>().playDMG;
+            enemyHP -= GameObject.FindObjectOfType<karÃ¤ktar>().playDMG;
         }
     }
 
 }
+
