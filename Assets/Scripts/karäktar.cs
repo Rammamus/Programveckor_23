@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class karäktar : MonoBehaviour
@@ -18,7 +17,8 @@ public class karäktar : MonoBehaviour
     bool isrunningWA = true;
     bool idle = true;
     // Variable for SpriteRenderer - Zion
-    public SpriteRenderer sR;
+    public SpriteRenderer sRSprint;
+    public SpriteRenderer sRSlash;
    
    
 
@@ -82,7 +82,8 @@ public class karäktar : MonoBehaviour
         playHP = playMAXHP;
         runningAnimation = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
-        sR = GetComponent<SpriteRenderer>();
+        sRSprint = GetComponent<SpriteRenderer>();
+        sRSlash = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -151,18 +152,18 @@ public class karäktar : MonoBehaviour
         {
             if (true)
             {
-                sR.flipX = true;
+                sRSprint.flipX = true;
             }
-            if (sR != null)
+            if (sRSprint != null)
             {
-                sR.flipX = true;
+                sRSprint.flipX = true;
             }
         }
         if (Input.GetKey(höger))
         {
             if (true)
             {
-                sR.flipX = false;
+                sRSprint.flipX = false;
             }
 
         }
