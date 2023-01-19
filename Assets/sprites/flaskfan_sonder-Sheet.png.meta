@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1049,8 +1061,8 @@ TextureImporter:
       flaskfan_sonder-Sheet_25: -421899328
       flaskfan_sonder-Sheet_7: -473555162
       flaskfan_sonder-Sheet_4: 702789208
-      flaskfan_sonder-Sheet_12: 461889503
       flaskfan_sonder-Sheet_42: -2009654970
+      flaskfan_sonder-Sheet_12: 461889503
       flaskfan_sonder-Sheet_3: -411841582
       flaskfan_sonder-Sheet_24: 175081837
       flaskfan_sonder-Sheet_17: 1748014015
