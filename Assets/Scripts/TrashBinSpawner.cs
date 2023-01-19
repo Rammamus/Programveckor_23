@@ -30,7 +30,17 @@ public class TrashBinSpawner : MonoBehaviour
             {
                 isSpawningM = false;
             }
-           
+         while (true)
+            {
+               
+                if (canSpawn == true)
+                {
+
+                }
+                    
+
+
+            }
         }
 
 
