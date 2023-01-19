@@ -134,7 +134,7 @@ public class karäktar : MonoBehaviour
         if (usingAxe == true)
         {
             runningAnimation.SetBool("isRunningWAx", true);
-            if ( usingAxe != null)
+            if (usingAxe != null)
             {
                 isrunningWAx = false;// just standing - Zion
             }
@@ -195,10 +195,11 @@ public class karäktar : MonoBehaviour
         }
         if (isAttacking == true)
         {
-            slicingAnimation.SetTrigger("Attack");
+            slicingAnimation.SetBool("Attack", true);
             attackDis += Time.deltaTime;
             if (attackDis > 0.5f)
             {
+                slicingAnimation.SetBool("Attack", false);
                 attack.SetActive(false);
                 isAttacking = false;
                 attackDis = 0;
