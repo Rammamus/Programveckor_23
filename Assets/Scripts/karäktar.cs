@@ -38,6 +38,7 @@ public class karäktar : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
+    public int coins;
 
     //Player stats - Adrian
     public float playHP;
@@ -155,7 +156,7 @@ public class karäktar : MonoBehaviour
             
         }
         
-        // the player will switch
+        // the player will switch-Zion
         if (Input.GetKey(vänster))
         {
             if (true)

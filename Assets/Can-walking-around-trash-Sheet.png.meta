@@ -1,0 +1,1367 @@
+fileFormatVersion: 2
+guid: fa0bbd5b01f680a4b87ea02b4fdbbcb2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 138
+        height: 1
+      alignment: 9
+      pivot: {x: 0.46249416, y: 0.35935286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe9e9ff8bc9cb24f990a11f3598421d
+      internalID: 1293006020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 127
+        width: 74
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b2bf2ad6d16024fa03007fc377a73e
+      internalID: -209822630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 127
+        width: 61
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c0089fd3fc00f4faa11769c4eb3f98
+      internalID: 1405294012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 127
+        width: 10
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1d75b723f84fa4e9c5895e502306af
+      internalID: -1021177001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 127
+        width: 68
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e785d98a9dd5e8045814280af0593022
+      internalID: 2072662065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 127
+        width: 51
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3154fc26b4736f34eb3ec7d8ee468c9a
+      internalID: -1537075740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 127
+        width: 73
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273fc297663c00647a4d6660227ebaab
+      internalID: 1129000189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 127
+        width: 37
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b956d44493797594797ea137d2568966
+      internalID: -1979299640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 127
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 0.0807562, y: 1.4563997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e220b3ce0b8e10b4aad3f168182938f3
+      internalID: -504690507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 127
+        width: 12
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe42cd7335ae4db499adb7402682e875
+      internalID: 289128567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 127
+        width: 46
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3738ba2e0c6fe69489013239f1b58bf9
+      internalID: 164992392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 127
+        width: 21
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4a7945da6298c45b3e99aeb58bf92b
+      internalID: 531461703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 127
+        width: 9
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f640220c3b33d84ebecbbef02ba7400
+      internalID: 1194145439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e3df8661dc0614da0354f9e99b503b
+      internalID: 753185567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 127
+        width: 15
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcbefd22d9a4f34cbef36d69cf1b558
+      internalID: 1545766594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 127
+        width: 50
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd694cb34505691469d56085235e4dd3
+      internalID: -2014117925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 127
+        width: 32
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad7ab18720f984469f5a5fdddb66894
+      internalID: -1026842992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 127
+        width: 38
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd74d033be704c340a68f08c846300b8
+      internalID: -44684996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 127
+        width: 7
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b395b15327f8f50498117c3e62c1e8c4
+      internalID: -1484555770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 127
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa08e634e6b3e543806d7ca28a6ce39
+      internalID: -1442258219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 127
+        width: 12
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c220090efc83824785c8904387771ba
+      internalID: -241473109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 127
+        width: 34
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7366f6329d21c044db5020201551f2f8
+      internalID: -916018630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 127
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744baaa8090bcf04ea8a57a3a1c6f479
+      internalID: -2072972233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 127
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327822da3eab46644bc30f84907dbf28
+      internalID: -1074008215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 0
+        width: 121
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c36a7ac23491964fbb4cdd79decfd62
+      internalID: 1091380048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 127
+        width: 22
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900bb9c4e12203b45b1277268d018339
+      internalID: -1014183734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 127
+        width: 21
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad5f68e12334954fb188c022e795fbd
+      internalID: -2027190168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 127
+        width: 20
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e00781a979cb2c4a8780b93ea2f3674
+      internalID: 891375781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0a19e46ee10614d931c20fee6364a5
+      internalID: -89015032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 127
+        width: 81
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c96ffafeee3e0409f62ac1cdd7fc13
+      internalID: 1503933360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7096cc8e31ed4a4bb064bcf21f36669
+      internalID: 1429083692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 127
+        width: 70
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbf6313d5c644a478958f0cb1d99d95
+      internalID: -1201054668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 4
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d31e80daa66b549b64679b4a9666cd
+      internalID: -426803490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 127
+        width: 74
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a703c2848e0e3d3459e72bdafb2d7005
+      internalID: -881917724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946e6e39750f48349af0bb3a605e6959
+      internalID: 1982158001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 127
+        width: 59
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15058e7d313b2764791ee2ab5f490ece
+      internalID: -859925416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4
+        width: 129
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fff478ac6b9bd4ba4634c049ca06bc
+      internalID: 2108649466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 127
+        width: 45
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f4d815c111e0b4795e8c4dfdbaaef2
+      internalID: 1453178112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 4
+        width: 129
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ad7c4d922fcf04d84f42cb185db7ec
+      internalID: -1714921818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 127
+        width: 32
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aca8a9822e6a4b458250cb04f1545e3
+      internalID: 593241248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 127
+        width: 15
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f41cc8b264c954a93b2af78a7e6292
+      internalID: 294739479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d1ef59919af5c4ba15a18305a2cc4e
+      internalID: 91512534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 0
+        width: 132
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b00ec0fd4b735d47ba003945fd6c7d5
+      internalID: 771948067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 127
+        width: 3
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9b3406fb5f8684c98981afa99063f1
+      internalID: 627993793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 0
+        width: 110
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1781e966218bfbf41991e2913fbd8bc6
+      internalID: 1956090169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 127
+        width: 51
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c5a801858d9af429212b5435946699
+      internalID: 1607502213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 5
+        width: 130
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7482d40834bd3f4ab222a565fef060d
+      internalID: 466722349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 127
+        width: 35
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec93b208581d9b49ae5b71f59c80cc5
+      internalID: 754152487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0f23390a2485a428c78b94570dd09f
+      internalID: -71476607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 127
+        width: 15
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa4ac5650d3dc94793380a598554be3
+      internalID: -434984822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 0
+        width: 142
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17f708b178d28e46bd3a632ba0736dc
+      internalID: 1863261480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 127
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b043514f0ea88e6439dae86708fe8eb9
+      internalID: -916857360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 127
+        width: 44
+        height: 1
+      alignment: 9
+      pivot: {x: 0.45067692, y: 0.41561162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffab7a870a565ef4188e19241573959d
+      internalID: 134083183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 4
+        width: 130
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924878f31f368e14e988187a70a2c5fa
+      internalID: -1417840891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 127
+        width: 46
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa12fe0cd1f67e488e7b9eed6a2cb25
+      internalID: 1390725425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Can-walking-around-trash-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2
+        width: 118
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405274d75113813429b3cea32333ffb6
+      internalID: 1078917377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Can-walking-around-trash-Sheet_21: -916018630
+      Can-walking-around-trash-Sheet_14: 1545766594
+      Can-walking-around-trash-Sheet_39: 593241248
+      Can-walking-around-trash-Sheet_24: 1091380048
+      Can-walking-around-trash-Sheet_20: -241473109
+      Can-walking-around-trash-Sheet_4: 2072662065
+      Can-walking-around-trash-Sheet_9: 289128567
+      Can-walking-around-trash-Sheet_38: -1714921818
+      Can-walking-around-trash-Sheet_7: -1979299640
+      Can-walking-around-trash-Sheet_15: -2014117925
+      Can-walking-around-trash-Sheet_28: -89015032
+      Can-walking-around-trash-Sheet_5: -1537075740
+      Can-walking-around-trash-Sheet_53: -1417840891
+      Can-walking-around-trash-Sheet_36: 2108649466
+      Can-walking-around-trash-Sheet_29: 1503933360
+      Can-walking-around-trash-Sheet_18: -1484555770
+      Can-walking-around-trash-Sheet_6: 1129000189
+      Can-walking-around-trash-Sheet_31: -1201054668
+      Can-walking-around-trash-Sheet_1: -209822630
+      Can-walking-around-trash-Sheet_8: -504690507
+      Can-walking-around-trash-Sheet_3: -1021177001
+      Can-walking-around-trash-Sheet_22: -2072972233
+      Can-walking-around-trash-Sheet_11: 531461703
+      Can-walking-around-trash-Sheet_42: 771948067
+      Can-walking-around-trash-Sheet_19: -1442258219
+      Can-walking-around-trash-Sheet_2: 1405294012
+      Can-walking-around-trash-Sheet_48: -71476607
+      Can-walking-around-trash-Sheet_30: 1429083692
+      Can-walking-around-trash-Sheet_41: 91512534
+      Can-walking-around-trash-Sheet_25: -1014183734
+      Can-walking-around-trash-Sheet_54: 1390725425
+      Can-walking-around-trash-Sheet_23: -1074008215
+      Can-walking-around-trash-Sheet_35: -859925416
+      Can-walking-around-trash-Sheet_46: 466722349
+      Can-walking-around-trash-Sheet_10: 164992392
+      Can-walking-around-trash-Sheet_17: -44684996
+      Can-walking-around-trash-Sheet_44: 1956090169
+      Can-walking-around-trash-Sheet_37: 1453178112
+      Can-walking-around-trash-Sheet_40: 294739479
+      Can-walking-around-trash-Sheet_16: -1026842992
+      Can-walking-around-trash-Sheet_27: 891375781
+      Can-walking-around-trash-Sheet_50: 1863261480
+      Can-walking-around-trash-Sheet_51: -916857360
+      Can-walking-around-trash-Sheet_26: -2027190168
+      Can-walking-around-trash-Sheet_12: 1194145439
+      Can-walking-around-trash-Sheet_32: -426803490
+      Can-walking-around-trash-Sheet_43: 627993793
+      Can-walking-around-trash-Sheet_49: -434984822
+      Can-walking-around-trash-Sheet_34: 1982158001
+      Can-walking-around-trash-Sheet_0: 1293006020
+      Can-walking-around-trash-Sheet_45: 1607502213
+      Can-walking-around-trash-Sheet_33: -881917724
+      Can-walking-around-trash-Sheet_13: 753185567
+      Can-walking-around-trash-Sheet_47: 754152487
+      Can-walking-around-trash-Sheet_55: 1078917377
+      Can-walking-around-trash-Sheet_52: 134083183
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
