@@ -134,7 +134,7 @@ public class karäktar : MonoBehaviour
         if (usingAxe == true)
         {
             runningAnimation.SetBool("isRunningWAx", true);
-            if ( usingAxe != null)
+            if (usingAxe != null)
             {
                 isrunningWAx = false;// just standing - Zion
             }
@@ -155,7 +155,7 @@ public class karäktar : MonoBehaviour
             
         }
         
-        // the player will switch
+        // the player will switch-Zion
         if (Input.GetKey(vänster))
         {
             if (true)
