@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Enemy BabyGlassPreFab1;
+    public Enemy BabyGlassPreFab2;
+    public Enemy BabyGlassPreFab3;
+    public Transform LaunchOffset;
+
     //stats for enemies - Adrian
     public float enemyHP;
     public float enemyDMG;
@@ -20,7 +25,6 @@ public class Enemy : MonoBehaviour
     public Animator animat;
     bool isAttackingM = true;
 
-   
     public float moveSpeed;
 
     // Variable for SpriteRenderer - Zion
@@ -56,7 +60,9 @@ public class Enemy : MonoBehaviour
     //Checks what enemy type it is - Adrian
     [SerializeField] public bool isDog = false;
     [SerializeField] public bool isGlass = false;
-    [SerializeField] public bool isBabyGlass = false;
+    [SerializeField] public bool isBabyGlass1 = false;
+    [SerializeField] public bool isBabyGlass2 = false;
+    [SerializeField] public bool isBabyGlass3 = false;
 
 
     //REMEMBER TO MAKE A CONDITION FOR THIS - Adrian
@@ -83,7 +89,7 @@ public class Enemy : MonoBehaviour
             enemyDMG = glass.dmg;
             enemySpeed = glass.speed;
         }
-        else if (isBabyGlass)
+        else if (isBabyGlass1 || isBabyGlass2 || isBabyGlass3)
         {
             enemyHP = babyGlass.hp;
             enemyDMG = babyGlass.dmg;
@@ -118,9 +124,17 @@ public class Enemy : MonoBehaviour
     {
         Swarm(); //Enemy always follow player - William
 
-        //Enemy die if 0hp or under - Adrian
-        if (enemyHP <= 0)
+        //Enemy die if 0hp or under and spawns small babies if glass enemy - Adrian
+        if (enemyHP <= 0 && !isGlass)
         {
+            Destroy(this.gameObject);
+            anima.SetBool("IsDead", true);
+        }
+        if (isGlass && enemyHP <= 0)
+        {
+            Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation);
+            Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation);
+            Instantiate(BabyGlassPreFab3, LaunchOffset.position, transform.rotation);
             Destroy(this.gameObject);
         }
 
