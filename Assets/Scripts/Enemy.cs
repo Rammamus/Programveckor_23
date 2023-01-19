@@ -51,6 +51,7 @@ public class Enemy : MonoBehaviour
     Enemies dog = new Enemies("Dog", 30, 10, 2.5f);
     Enemies glass = new Enemies("Glass", 40, 15, 1.5f);
     Enemies babyGlass = new Enemies("Baby Glass", 20, 7.5f, 2.5f);
+    public bool canSpawnBabies = true;
 
     private GameObject player;
     private GameObject testEnemy;
@@ -130,12 +131,22 @@ public class Enemy : MonoBehaviour
             Destroy(this.gameObject);
             anima.SetBool("IsDead", true);
         }
-        if (isGlass && enemyHP <= 0)
+        if (isGlass && enemyHP <= 0 && canSpawnBabies == true)
         {
+            print("hhgh");
             Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation);
             Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation);
             Instantiate(BabyGlassPreFab3, LaunchOffset.position, transform.rotation);
-            Destroy(this.gameObject);
+            canSpawnBabies = false;
+        }
+        if (isGlass && enemyHP <= 0 && canSpawnBabies == false)
+        {
+            float dyingTimer = 0;
+            dyingTimer += Time.deltaTime;
+            if (dyingTimer > 0.3f)
+            {
+                Destroy(this.gameObject);
+            }
         }
 
         // The Animation for monster run cycle- Zion
