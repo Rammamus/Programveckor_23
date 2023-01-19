@@ -38,6 +38,7 @@ public class karäktar : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
+    public int coins;
 
     //Player stats - Adrian
     public float playHP;
@@ -195,10 +196,11 @@ public class karäktar : MonoBehaviour
         }
         if (isAttacking == true)
         {
-            slicingAnimation.SetTrigger("Attack");
+            slicingAnimation.SetBool("Attack", true);
             attackDis += Time.deltaTime;
             if (attackDis > 0.5f)
             {
+                slicingAnimation.SetBool("Attack", false);
                 attack.SetActive(false);
                 isAttacking = false;
                 attackDis = 0;

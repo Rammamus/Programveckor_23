@@ -4,17 +4,20 @@ using UnityEngine;
 
 [System.Serializable]
 //wave namn, nummmer av enemies, vilken sort enemy, spawner.
+
 public class Wave
 {
     public string waveName;
     public int noOfEnemies= 0;
     public GameObject[] typeOfEnemies;
     public float spawnInterval;
+
 }
 
 //räknar vilken wave och spawnpoints för enemies
 public class ENEMYSPAWNER : MonoBehaviour
 {
+    public karäktar player;
     public Wave[] waves;
     public Transform[] spawnPoint;
 
@@ -77,6 +80,10 @@ public class ENEMYSPAWNER : MonoBehaviour
                 waveTimer = 0;
                 timer2--;
             }
+
+            
+           
+           
         }
         else if (waveOver == false)
         {
