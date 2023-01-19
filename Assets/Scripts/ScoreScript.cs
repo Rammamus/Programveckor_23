@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public class coin : MonoBehaviour
+{
+    public int value;
+}
 public class ScoreScript : MonoBehaviour
 {
     //gissa
@@ -60,11 +64,13 @@ public class ScoreScript : MonoBehaviour
 
     public void Start()
     {
-        score = 0;
+         score = 0;
     }
 
     public void Update()
     {
+        coins = player.GetComponent<karäktar>().coins;
+
         if (Input.GetKey(KeyCode.Space))
         {
             score++;
@@ -78,7 +84,8 @@ public class ScoreScript : MonoBehaviour
             highScore = score;
         }
     }
-    
+
+  
     //allows creation of new items - Adrian
     class PermaUpgrades
     {

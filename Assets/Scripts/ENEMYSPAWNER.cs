@@ -20,6 +20,7 @@ public class ENEMYSPAWNER : MonoBehaviour
     public karäktar player;
     public Wave[] waves;
     public Transform[] spawnPoint;
+    public CoinCounter cc;
 
     private Wave currentWave;
     private int currentWaveNumber = 1;
@@ -70,6 +71,8 @@ public class ENEMYSPAWNER : MonoBehaviour
         {
             waveOver = true;
         }
+
+        
         
         if (waveOver == true)
         {
@@ -81,7 +84,7 @@ public class ENEMYSPAWNER : MonoBehaviour
                 timer2--;
             }
 
-            
+            player.coins += 5; // player.coins += 5;
            
            
         }
