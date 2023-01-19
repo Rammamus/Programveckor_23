@@ -49,9 +49,9 @@ public class DeathScreen : MonoBehaviour
 
     public void Lobby ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); 
-        
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+ 
+    
 
 }
