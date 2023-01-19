@@ -34,7 +34,7 @@ public class BossMove2 : MonoBehaviour
             if (isDashing && !isPreparingForDash)
             {
                 print("Dash");
-                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * kr.playSpeed * 20); // sänk fart samt gör så att shop och power inte ändrar, fixa playspeed.
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * kr.playSpeed * 5); // sänk fart samt gör så att shop och power inte ändrar, fixa playspeed.
             }
         }
         else
