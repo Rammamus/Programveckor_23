@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public class coin : MonoBehaviour
+{
+    public int value;
+}
 public class ScoreScript : MonoBehaviour
 {
     //gissa
@@ -10,7 +14,10 @@ public class ScoreScript : MonoBehaviour
     public int highScore;
     public int coins;
     public karäktar player;
-
+    public TMPro.TextMeshProUGUI styrkePris;
+    public TMPro.TextMeshProUGUI Attackpris;
+    public TMPro.TextMeshProUGUI Speedpris;
+    public TMPro.TextMeshProUGUI Healthpris;
     //All below allows buying perma stat boosts - Adrian
     public void BuyHPStat()
     {
@@ -30,6 +37,7 @@ public class ScoreScript : MonoBehaviour
             coins -= Strength.price;
             Strength.price *= 2;
             player.GetComponent<karäktar>().playDMG *= 1.1f;
+
         }
     }
 
@@ -60,11 +68,13 @@ public class ScoreScript : MonoBehaviour
 
     public void Start()
     {
-        score = 0;
+         score = 0;
     }
 
     public void Update()
     {
+        coins = player.GetComponent<karäktar>().coins;
+
         if (Input.GetKey(KeyCode.Space))
         {
             score++;
@@ -78,7 +88,8 @@ public class ScoreScript : MonoBehaviour
             highScore = score;
         }
     }
-    
+
+  
     //allows creation of new items - Adrian
     class PermaUpgrades
     {

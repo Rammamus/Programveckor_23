@@ -12,6 +12,7 @@ public class BossMove2 : MonoBehaviour
     public karäktar kr;
     public BossMove bm;
     bool tryingToDash;
+    private float dashspeed = 1.6f;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,12 +35,12 @@ public class BossMove2 : MonoBehaviour
             if (isDashing && !isPreparingForDash)
             {
                 print("Dash");
-                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * kr.playSpeed * 5); // sänk fart samt gör så att shop och power inte ändrar, fixa playspeed.
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * dashspeed * 5); // sänk fart samt gör så att shop och power inte ändrar, fixa playspeed.
             }
         }
         else
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * kr.playSpeed * 0.25f);
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * dashspeed * 0.25f);
         }
     }
     IEnumerator DashMovementHandler()

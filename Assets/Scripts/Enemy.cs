@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     // Variables for animation - Zion
     public Animator anima;
     bool isrunningM = true;
+    public Animator animat;
+    bool isAttackingM = true;
 
    
     public float moveSpeed;
@@ -62,7 +64,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-      
+        animat= GetComponent<Animator>();
         testEnemy = GameObject.FindGameObjectWithTag("Enemy");
         anima = GetComponent<Animator>();
         sR = GetComponent<SpriteRenderer>();
@@ -163,6 +165,23 @@ public class Enemy : MonoBehaviour
             {
                 collider.GetComponent<karäktar>().playHP -= enemyDMG;
             }
+        }
+
+
+
+        // The Animation for monster attack- Zion
+
+        if ((collider.CompareTag("Attack") == true))
+        {
+            animat.SetBool("isAttackingM", true);
+            if (animat != null)
+            {
+                isAttackingM = false;
+            }
+        }
+        if (collider.CompareTag("Attack"))
+        {
+
         }
         if (collider.CompareTag("Attack"))
         {
