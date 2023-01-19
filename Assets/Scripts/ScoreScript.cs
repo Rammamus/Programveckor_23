@@ -14,7 +14,10 @@ public class ScoreScript : MonoBehaviour
     public int highScore;
     public int coins;
     public karäktar player;
-
+    public TMPro.TextMeshProUGUI styrkePris;
+    public TMPro.TextMeshProUGUI Attackpris;
+    public TMPro.TextMeshProUGUI Speedpris;
+    public TMPro.TextMeshProUGUI Healthpris;
     //All below allows buying perma stat boosts - Adrian
     public void BuyHPStat()
     {
@@ -34,6 +37,7 @@ public class ScoreScript : MonoBehaviour
             coins -= Strength.price;
             Strength.price *= 2;
             player.GetComponent<karäktar>().playDMG *= 1.1f;
+
         }
     }
 
