@@ -53,6 +53,11 @@ public class karäktar : MonoBehaviour
     public AudioSource swordSlash;
     private AudioSource source;
     public AudioClip[] sounds;
+    
+    // difficulty manager för save.
+    public DifficultyMAnager dm;
+    public bool hardisenable = false;
+    public bool impossibleenable = false;
 
     public bool usingSword = false;
     public bool usingAxe = false;
@@ -262,5 +267,22 @@ public class karäktar : MonoBehaviour
     }
 
 
+    public void savePlayer ()
+    {
+        savesystem.SavePlayer(this);
+    }
+    public void loadPlayer()
+    {
+        PlayerData data = savesystem.LoadPlayer();
+
+        playHP = data.hp;
+        playAttackSpeed = data.attacksp;
+        playDMG = data.dmg;
+        playSpeed = data.speed;
+        hardisenable = data.hardlockedstate;
+        impossibleenable = data.impossiblelockedstate;
+
+
+    }
 
 }

@@ -65,5 +65,9 @@ public class DifficultyMAnager : MonoBehaviour
             impossibleLockedButton.SetActive(false);
             print("Impossibleunlock");
         }
+
+
     }
+
+    
 }
