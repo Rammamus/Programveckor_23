@@ -14,16 +14,22 @@ public class ScoreScript : MonoBehaviour
     public int highScore;
     public int coins;
     public karäktar player;
+    public CoinCounter cc;
     public TMPro.TextMeshProUGUI styrkePris;
     public TMPro.TextMeshProUGUI Attackpris;
     public TMPro.TextMeshProUGUI Speedpris;
     public TMPro.TextMeshProUGUI Healthpris;
+
+    
+
+    
     //All below allows buying perma stat boosts - Adrian
     public void BuyHPStat()
     {
-        if (coins >= HP.price)
+        if (cc.currentCoins >= HP.price)
         {
-            coins -= HP.price;
+
+            cc.DecreaseCoins(HP.price);
             HP.price *= 2;
             player.GetComponent<karäktar>().playHP *= 1.1f;
         }
@@ -32,9 +38,10 @@ public class ScoreScript : MonoBehaviour
 
     public void BuyStrengthStat()
     {
-        if (coins >= Strength.price)
+        if (cc.currentCoins >= Strength.price)
         {
-            coins -= Strength.price;
+            print("heh");
+            cc.DecreaseCoins(Strength.price);
             Strength.price *= 2;
             player.GetComponent<karäktar>().playDMG *= 1.1f;
 
@@ -43,9 +50,9 @@ public class ScoreScript : MonoBehaviour
 
     public void BuySpeedStat()
     {
-        if (coins >= Speed.price)
+        if (cc.currentCoins >= Speed.price)
         {
-            coins -= Speed.price;
+            cc.DecreaseCoins(Speed.price);
             Speed.price *= 2;
             player.GetComponent<karäktar>().playSpeed *= 1.1f;
         }
@@ -53,9 +60,9 @@ public class ScoreScript : MonoBehaviour
 
     public void BuyAttackSpeed()
     {
-        if (coins >= AttackSpeed.price)
+        if (cc.currentCoins >= AttackSpeed.price)
         {
-            coins -= AttackSpeed.price;
+            cc.DecreaseCoins(AttackSpeed.price);
             AttackSpeed.price *= 2;
             player.GetComponent<karäktar>().playAttackSpeed *= 1.1f;
         }
@@ -69,6 +76,7 @@ public class ScoreScript : MonoBehaviour
     public void Start()
     {
          score = 0;
+        cc = FindObjectOfType<CoinCounter>();
     }
 
     public void Update()
@@ -104,8 +112,8 @@ public class ScoreScript : MonoBehaviour
     }
 
     //Item list - Adrian
-    PermaUpgrades HP = new PermaUpgrades("Thicker Jumpsuit", 50);
-    PermaUpgrades Strength = new PermaUpgrades("Bicep Curls", 50);
-    PermaUpgrades Speed = new PermaUpgrades("New Boots", 50);
+    PermaUpgrades HP = new PermaUpgrades("Thicker Jumpsuit", 150);
+    PermaUpgrades Strength = new PermaUpgrades("Bicep Curls", 70);
+    PermaUpgrades Speed = new PermaUpgrades("New Boots", 110);
     PermaUpgrades AttackSpeed = new PermaUpgrades("Lighter Gloves", 50);
 }
