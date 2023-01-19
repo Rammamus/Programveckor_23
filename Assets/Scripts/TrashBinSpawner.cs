@@ -13,12 +13,27 @@ public class TrashBinSpawner : MonoBehaviour
     bool canSpawn = true;
     public Animator amM;
     bool isSpawningM = true;
+    bool time;
+    float f;
     private void start()
     {
         amM = GetComponent<Animator>();
     }
     private void Update()
     {
+        // animation for spawning monster-Zion
+        if (canSpawn == true)
+        {
+
+            amM.SetBool("isSpawningM", true);
+            if (amM != null)
+            {
+                isSpawningM = false;
+            }
+           
+        }
+
+
         enemySpawnTime += Time.deltaTime;
 
         if (enemySpawnTime > 5 && canSpawn == true)
@@ -28,14 +43,6 @@ public class TrashBinSpawner : MonoBehaviour
             enemyCount++;
         }
         
-        // animation for spawning monster-Zion
-        if (canSpawn == true)
-        {
-            amM.SetBool("isSpawningM", true);
-            if (amM != null)
-            {
-                isSpawningM = false;
-            }
-        }
+    
     }
 }
