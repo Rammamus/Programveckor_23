@@ -11,12 +11,18 @@ public class PlayerData
     public float speed;
     public bool hardlockedstate;
     public bool impossiblelockedstate;
-
+    public ScoreScript ss;
+    public int prishp;
+    public int prisspeed;
+    public int prisdmg;
+    public int prisattacksp; // fixa save för shop priserna.
+   
     public PlayerData (karäktar kr)
     {
         hp = kr.playHP;
         attacksp = kr.playAttackSpeed;
         dmg = kr.playDMG;
         speed = kr.playSpeed;
+        
     }
 }
