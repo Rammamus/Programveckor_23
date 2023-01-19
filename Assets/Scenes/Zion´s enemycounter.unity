@@ -200,6 +200,9 @@ MonoBehaviour:
   axeSlash: {fileID: 0}
   swordSlash: {fileID: 0}
   sounds: []
+  dm: {fileID: 0}
+  hardisenable: 0
+  impossibleenable: 0
   usingSword: 0
   usingAxe: 0
 --- !u!212 &712542953

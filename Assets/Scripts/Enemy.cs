@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     public Animator anima;
     bool isrunningM = true;
     public Animator animat;
-    bool isAttacking = true;
+    bool isAttackingM = true;
 
    
     public float moveSpeed;
@@ -173,10 +173,10 @@ public class Enemy : MonoBehaviour
 
         if ((collider.CompareTag("Attack") == true))
         {
-            animat.SetBool("isAttacking", true);
+            animat.SetBool("isAttackingM", true);
             if (animat != null)
             {
-                isAttacking = false;
+                isAttackingM = false;
             }
         }
         if (collider.CompareTag("Attack"))
