@@ -156,7 +156,7 @@ public class karäktar : MonoBehaviour
             
         }
         
-        // the player will switch
+        // the player will switch-Zion
         if (Input.GetKey(vänster))
         {
             if (true)
