@@ -16,8 +16,10 @@ public class TrashBinSpawner : MonoBehaviour
     bool isSpawningM = true;
     bool time;
     float f;
+    public AudioSource spawnFX;
     private void start()
     {
+        spawnFX = GetComponent<AudioSource>();
         amM = GetComponent<Animator>();
     }
     private void Update()
@@ -39,6 +41,7 @@ public class TrashBinSpawner : MonoBehaviour
 
         if (enemySpawnTime > 5 && canSpawn == true)
         {
+            spawnFX.Play();
             Instantiate(ProjectilePreFab, LaunchOffset.position, transform.rotation);
             enemySpawnTime = 0;
             enemyCount++;
