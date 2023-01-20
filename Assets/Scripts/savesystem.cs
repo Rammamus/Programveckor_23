@@ -2,7 +2,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-
+// Skapar spar fil på datorn som går att ladda in en gammal "save" - casper
 public static class savesystem 
 {
     public static void SavePlayer (karäktar kr)

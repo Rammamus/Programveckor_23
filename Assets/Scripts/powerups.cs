@@ -19,7 +19,7 @@ public class powerups : MonoBehaviour
         
 
     }
-
+    // när en wave är klar så kommer det upp powerups- casper.
     // Update is called once per frame
     void Update()
     {

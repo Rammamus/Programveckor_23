@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -813506019
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6a7b95bea0c2e8a4aa4a66e71d07af71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,6 +129,8 @@ MonoBehaviour:
   BabyGlassPreFab2: {fileID: -9218981600234426447, guid: e3d01b2c180ed0f4d8e6fcaede254166, type: 3}
   BabyGlassPreFab3: {fileID: -9218981600234426447, guid: a4d2f9902e87f0349a0ae4179a0b7bce, type: 3}
   LaunchOffset: {fileID: 4335732616392482380}
+  hasSpawned: 0
+  isImmortal: 0
   enemyHP: 0
   enemyDMG: 0
   enemySpeed: 0
@@ -140,6 +142,7 @@ MonoBehaviour:
   animat: {fileID: 0}
   moveSpeed: 0
   sR: {fileID: 0}
+  canSpawnBabies: 1
   "karakt\xE4r": {fileID: 0}
   isDog: 0
   isGlass: 1

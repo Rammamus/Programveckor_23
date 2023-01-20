@@ -28,7 +28,7 @@ public class tooltip : MonoBehaviour
         Cursor.visible = true;
         gameObject.SetActive(false);
     }
-
+    // useless script abandond project -casper.
     // Update is called once per frame
     void Update()
     {

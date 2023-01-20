@@ -16,7 +16,7 @@ public class PlayerData
     public int prisspeed;
     public int prisdmg;
     public int prisattacksp; // fixa save för shop priserna.
-   
+   // en del av save script -- casper
     public PlayerData (karäktar kr)
     {
         hp = kr.playHP;

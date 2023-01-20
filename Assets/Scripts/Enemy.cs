@@ -9,6 +9,10 @@ public class Enemy : MonoBehaviour
     public Enemy BabyGlassPreFab3;
     public Transform LaunchOffset;
 
+    public bool hasSpawned = false;
+    public bool isImmortal = false;
+    float immortalTimer = 0;
+
     //stats for enemies - Adrian
     public float enemyHP;
     public float enemyDMG;
@@ -95,6 +99,7 @@ public class Enemy : MonoBehaviour
             enemyHP = babyGlass.hp;
             enemyDMG = babyGlass.dmg;
             enemySpeed = babyGlass.speed;
+            isImmortal = true;
         }
 
         //changes enemy stats with game difficulty - Casper
@@ -123,10 +128,16 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        immortalTimer += Time.deltaTime;
+        if (immortalTimer > 1)
+        {
+            print("no longer");
+            isImmortal = false;
+        }
         Swarm(); //Enemy always follow player - William
 
         //Enemy die if 0hp or under and spawns small babies if glass enemy - Adrian
-        if (enemyHP <= 0 && !isGlass)
+        if (enemyHP <= 0 && !isGlass && isImmortal == false)
         {
             Destroy(this.gameObject);
             anima.SetBool("IsDead", true);
@@ -137,16 +148,11 @@ public class Enemy : MonoBehaviour
             Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation);
             Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation);
             Instantiate(BabyGlassPreFab3, LaunchOffset.position, transform.rotation);
-            canSpawnBabies = false;
+            hasSpawned = true;
         }
-        if (isGlass && enemyHP <= 0 && canSpawnBabies == false)
+        if (isGlass && enemyHP <= 0 && hasSpawned)
         {
-            float dyingTimer = 0;
-            dyingTimer += Time.deltaTime;
-            if (dyingTimer > 0.3f)
-            {
-                Destroy(this.gameObject);
-            }
+            Destroy(this.gameObject);
         }
 
         // The Animation for monster run cycle- Zion

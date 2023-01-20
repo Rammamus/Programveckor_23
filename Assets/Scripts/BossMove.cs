@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossMove: MonoBehaviour
 {
     //fråga zion hur spriteflip.x när vänder
-
+    //rörelse för bossen - william
     public float chaseDistance;
     public bool isChasing;
     public float moveSpeed;
@@ -21,6 +21,7 @@ public class BossMove: MonoBehaviour
     private float dashCaunter;
     private float dashCoolCounter;
 
+    //rörelse för bossen - william
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class BossMove: MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
     }
 
+    //rörelse för bossen - william
     // Update is called once per frame
     void Update()
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Ljud och volym - Ocean
 public class soundVolumeBG : MonoBehaviour
 {
     [SerializeField] Slider SliderVolume;
