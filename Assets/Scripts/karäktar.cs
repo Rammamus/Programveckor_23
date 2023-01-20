@@ -17,7 +17,9 @@ public class karäktar : MonoBehaviour
     public Animator slicingAnimation;
     bool isrunning = true;
     bool isrunningWAx = true;
-   
+    bool attackingP = true;
+    public Animator animAP;
+    bool isassa = true;
     // Variable for SpriteRenderer - Zion
     public SpriteRenderer sRSprint;
     public SpriteRenderer sRSlash;
@@ -84,6 +86,7 @@ public class karäktar : MonoBehaviour
     {
         playHP = playMAXHP;
         runningAnimation = GetComponent<Animator>();
+        animAP = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
         sRSprint = GetComponent<SpriteRenderer>();
         sRSlash = GetComponent<SpriteRenderer>();
@@ -198,15 +201,17 @@ public class karäktar : MonoBehaviour
                 swordSlash.Play();
             }
         }
-        if (isAttacking == true)
+
+        // animation for attack-swoshen
+        if (attack == true)
         {
-            slicingAnimation.SetBool("Attack", true);
+            animAP.SetBool("attackingP", true);
             attackDis += Time.deltaTime;
             if (attackDis > 0.5f)
             {
-                slicingAnimation.SetBool("Attack", false);
+              animAP.SetBool("attackingP", false);
                 attack.SetActive(false);
-                isAttacking = false;
+                isassa = false;
                 attackDis = 0;
             }
         }
