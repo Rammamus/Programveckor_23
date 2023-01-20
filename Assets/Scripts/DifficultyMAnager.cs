@@ -21,7 +21,7 @@ public class DifficultyMAnager : MonoBehaviour
     {
         
     }
-
+    //unlockar olika svårhetsgrader - casper
     // Update is called once per frame
     void Update()
     {

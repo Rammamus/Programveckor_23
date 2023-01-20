@@ -28,6 +28,7 @@ public class BossDamage : MonoBehaviour
     public Enemy em;
     Enemies BigDog = new Enemies("Boss", 300, 12.5f, 0.5f);
 
+    // Bossens damage - William
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
@@ -37,6 +38,7 @@ public class BossDamage : MonoBehaviour
         }
     }
 
+    // Om bossen är död + svårhetsgrad som unlockar svårhetsgraden - Casper
     private void Update()
     {
         if (BigDog.hp <= 0)

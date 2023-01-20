@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//svårhets graderna. -Casper.
 public class DIFFICULITY : MonoBehaviour
 {
     public Enemy em; 
