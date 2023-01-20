@@ -4,6 +4,8 @@ using UnityEngine;
 public class karäktar : MonoBehaviour
 
 {
+    public HealthBar healthBar;
+
     //Variables for attacking - Adrian
     public GameObject attack;
     public bool isAttacking = false;
@@ -19,9 +21,6 @@ public class karäktar : MonoBehaviour
     // Variable for SpriteRenderer - Zion
     public SpriteRenderer sRSprint;
     public SpriteRenderer sRSlash;
-   
-   
-
 
 
     //Variables for movement and dash - Casper
@@ -63,8 +62,6 @@ public class karäktar : MonoBehaviour
     public bool usingAxe = false;
 
     //Creates weapons - Zion
-
-
     SpriteRenderer sprite;
     class Weapons
     {
@@ -94,6 +91,8 @@ public class karäktar : MonoBehaviour
 
     void Update()
     {
+        healthBar.SetHealth(playHP);
+
         //Movement and dashing - Casper
         if (isDashing)
         {

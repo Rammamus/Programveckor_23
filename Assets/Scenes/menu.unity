@@ -500,6 +500,7 @@ MonoBehaviour:
   highScore: 0
   coins: 0
   player: {fileID: 1813469716}
+  cc: {fileID: 0}
   styrkePris: {fileID: 990862572}
   Attackpris: {fileID: 780076024}
   Speedpris: {fileID: 126109494}
@@ -656,6 +657,7 @@ MonoBehaviour:
   highScore: 0
   coins: 0
   player: {fileID: 1813469716}
+  cc: {fileID: 0}
   styrkePris: {fileID: 990862572}
   Attackpris: {fileID: 780076024}
   Speedpris: {fileID: 126109494}
@@ -3433,6 +3435,7 @@ MonoBehaviour:
   highScore: 0
   coins: 0
   player: {fileID: 1813469716}
+  cc: {fileID: 0}
   styrkePris: {fileID: 990862572}
   Attackpris: {fileID: 780076024}
   Speedpris: {fileID: 126109494}
@@ -4298,6 +4301,7 @@ MonoBehaviour:
   highScore: 0
   coins: 0
   player: {fileID: 1813469716}
+  cc: {fileID: 0}
   styrkePris: {fileID: 990862572}
   Attackpris: {fileID: 780076024}
   Speedpris: {fileID: 126109494}
@@ -5647,7 +5651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1419822637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6190,6 +6194,7 @@ MonoBehaviour:
   highScore: 0
   coins: 0
   player: {fileID: 1813469716}
+  cc: {fileID: 0}
   styrkePris: {fileID: 0}
   Attackpris: {fileID: 0}
   Speedpris: {fileID: 0}
@@ -6630,7 +6635,7 @@ GameObject:
   - component: {fileID: 1776338700}
   - component: {fileID: 1776338703}
   - component: {fileID: 1776338702}
-  - component: {fileID: 1776338701}
+  - component: {fileID: 1776338704}
   m_Layer: 0
   m_Name: coins
   m_TagString: Untagged
@@ -6658,20 +6663,6 @@ RectTransform:
   m_AnchoredPosition: {x: 302, y: 309}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1776338701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776338699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8eb88fd1652f47bb58b3b19518dc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinText: {fileID: 1776338702}
-  currentCoins: 0
 --- !u!114 &1776338702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6694,8 +6685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cc5866fe23480704a88b9f70b5b1730f, type: 2}
+  m_sharedMaterial: {fileID: 4269292754009791369, guid: cc5866fe23480704a88b9f70b5b1730f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6769,6 +6760,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776338699}
   m_CullTransparentMesh: 1
+--- !u!114 &1776338704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776338699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb8eb88fd1652f47bb58b3b19518dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1776338702}
+  currentCoins: 0
 --- !u!1 &1783945209
 GameObject:
   m_ObjectHideFlags: 0
@@ -7962,6 +7967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dm: {fileID: 879835109}
+  cc: {fileID: 0}
   inputfield: {fileID: 1896042991}
 --- !u!1 &1913528336
 GameObject:
