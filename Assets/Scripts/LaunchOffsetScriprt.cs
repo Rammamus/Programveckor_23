@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class LaunchOffsetScriprt : MonoBehaviour
 {
-    public GameObject scale;
+    public Transform tm;
     public karäktar player;
     public SpriteRenderer spr;
-    public Transform tm;
-    Vector3 dir;
-
+     string vänster;
+     string höger;
     // Start is called before the first frame update
     void Start()
     {
-        
-        spr = GetComponent<SpriteRenderer>();
-        player = GetComponent<karäktar>();
         tm = GetComponent<Transform>();
+        spr = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -25,21 +23,32 @@ public class LaunchOffsetScriprt : MonoBehaviour
         //Aims towards where the attack is aimed and locks the rotation of the attack during the attack duration - Adrian
         if (player.GetComponent<karäktar>().isAttacking == false)
         {
-        Vector3 targetDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float angle = (Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg);
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            Vector3 targetDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            float angle = (Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg);
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
+        
 
-
-        if (Input.GetKeyDown(KeyCode.A))
+        /*
+        if (Input.GetKey(vänster))
         {
-            
+            if (true)
+            {
+               spr.flipX = true;
+            }
+            if (spr != null)
+            {
+                spr.flipX = true;
+            }
+        }
+        if (Input.GetKey(höger))
+        {
+            if (true)
+            {
+               spr.flipX = false;
+            }
 
         }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            
-        }
-       
+        */
     }
 }

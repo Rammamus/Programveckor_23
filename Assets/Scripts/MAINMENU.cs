@@ -13,6 +13,7 @@ public class MAINMENU : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // byt ut 1an mot gamescene
         clickSound.Play();
+        Time.timeScale = 1;
  
     }
     public void QuitGame ()

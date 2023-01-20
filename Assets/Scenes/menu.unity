@@ -1097,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &211715119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6412,7 +6412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1672766117
 Transform:
   m_ObjectHideFlags: 0
@@ -7335,9 +7335,10 @@ MonoBehaviour:
   isAttacking: 0
   runningAnimation: {fileID: 0}
   slicingAnimation: {fileID: 0}
-  animAP: {fileID: 0}
+  animPA: {fileID: 0}
   sRSprint: {fileID: 0}
   sRSlash: {fileID: 0}
+  enemy: {fileID: 0}
   boxCollider: {fileID: 0}
   up: 0
   down: 0

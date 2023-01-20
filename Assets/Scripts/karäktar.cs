@@ -24,6 +24,7 @@ public class karäktar : MonoBehaviour
     public SpriteRenderer sRSprint;
     public SpriteRenderer sRSlash;
 
+    public Enemy enemy;
 
     //Variables for movement and dash - Casper
     [SerializeField] BoxCollider2D boxCollider;
@@ -187,7 +188,7 @@ public class karäktar : MonoBehaviour
 
         //Both activates the attack object and sets a duration timer that deactivates it - Adrian
         timer += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.Mouse1) && timer >= playAttackSpeed)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && timer >= playAttackSpeed)
         {
             attack.SetActive(true);
             timer = 0;
@@ -268,9 +269,22 @@ public class karäktar : MonoBehaviour
             source.PlayOneShot(source.clip);
             sprite.color = Color.red;
             sprite.color = Color.white;
+            playHP -= enemy.GetComponent<Enemy>().enemyDMG;
+            print(playHP);
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            source.clip = sounds[Random.Range(0, sounds.Length)];
+            source.PlayOneShot(source.clip);
+            sprite.color = Color.red;
+            sprite.color = Color.white;
+            playHP -= enemy.GetComponent<Enemy>().enemyDMG;
+            print(playHP);
+        }
+    }
 
     public void savePlayer ()
     {

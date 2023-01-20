@@ -28,6 +28,7 @@ public class DeathScreen : MonoBehaviour
     public void Activate_deathscreen()
     {
         deathPanel.SetActive(true);
+        Time.timeScale = 0;
     }
     public void Update()
     {

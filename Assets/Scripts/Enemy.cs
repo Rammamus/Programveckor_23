@@ -200,10 +200,8 @@ public class Enemy : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            if (collider.GetComponent<karäktar>() != null)
-            {
-                collider.GetComponent<karäktar>().playHP -= enemyDMG;
-            }
+            player.GetComponent<karäktar>().playHP -= enemyDMG;
+            print(player.GetComponent<karäktar>().playHP);
         }
 
 
