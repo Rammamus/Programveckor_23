@@ -6,6 +6,7 @@ public class TrashBinSpawner : MonoBehaviour
 {
     public GameObject ProjectilePreFab;
     public Transform LaunchOffset;
+    public SpriteRenderer spr;
 
     float enemySpawnTime;
     public int enemyCount = 0;
@@ -30,17 +31,7 @@ public class TrashBinSpawner : MonoBehaviour
             {
                 isSpawningM = false;
             }
-         while (true)
-            {
-               
-                if (canSpawn == true)
-                {
-
-                }
-                    
-
-
-            }
+        
         }
 
 

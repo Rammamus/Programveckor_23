@@ -171,17 +171,13 @@ public class Enemy : MonoBehaviour
 
         // The Animation for monster attack- Zion
 
-        if ((collider.CompareTag("Attack") == true))
+        if ((collider.CompareTag("Player") == true) && isDog)
         {
             animat.SetBool("isAttackingM", true);
             if (animat != null)
             {
                 isAttackingM = false;
             }
-        }
-        if (collider.CompareTag("Attack"))
-        {
-
         }
         if (collider.CompareTag("Attack"))
         {
