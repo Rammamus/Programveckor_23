@@ -17,6 +17,11 @@ public class CoinCounter : MonoBehaviour
     {
         coinText.text = "COINS: " + currentCoins.ToString();
     }
+    public void DecreaseCoins(int v)
+    {
+        currentCoins -= v;
+        coinText.text = "COINS: " + currentCoins.ToString();
+    }
 
     public void IncreaseCoins(int v)
     {
@@ -24,12 +29,5 @@ public class CoinCounter : MonoBehaviour
         coinText.text = "COINS: " + currentCoins.ToString();
     }
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            IncreaseCoins(5);
-            print("funkar");
-        }
-    }
+    
 }

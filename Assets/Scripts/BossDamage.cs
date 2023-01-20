@@ -26,7 +26,7 @@ public class BossDamage : MonoBehaviour
     [SerializeField] public bool isBigDog = false;
     public DifficultyMAnager dm;
     public Enemy em;
-    Enemies BigDog = new Enemies("Boss", 100, 12.5f, 0.5f);
+    Enemies BigDog = new Enemies("Boss", 300, 12.5f, 0.5f);
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

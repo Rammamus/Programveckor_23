@@ -12,6 +12,7 @@ public class PasswordInputField : MonoBehaviour
 {
 
     public DifficultyMAnager dm;
+    public CoinCounter cc;
 
 
     public InputField inputfield;
@@ -26,11 +27,18 @@ public class PasswordInputField : MonoBehaviour
             dm.gameObject.GetComponent<DifficultyMAnager>().impossibleisUnlock = true;
             dm.gameObject.GetComponent<DifficultyMAnager>().hardIsBeat = true;
             dm.gameObject.GetComponent<DifficultyMAnager>().mediumIsBeat = true;
+            cc.IncreaseCoins(10000);
+
         }
         else
         {
             print("wrong");
         }
+    }
+
+    private void Start()
+    {
+        cc = FindObjectOfType<CoinCounter>();
     }
 }
 

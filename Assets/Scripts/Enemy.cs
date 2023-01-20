@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Enemy BabyGlassPreFab1;
+    public Enemy BabyGlassPreFab2;
+    public Enemy BabyGlassPreFab3;
+    public Transform LaunchOffset;
+
     //stats for enemies - Adrian
     public float enemyHP;
     public float enemyDMG;
@@ -20,7 +25,6 @@ public class Enemy : MonoBehaviour
     public Animator animat;
     bool isAttackingM = true;
 
-   
     public float moveSpeed;
 
     // Variable for SpriteRenderer - Zion
@@ -47,6 +51,7 @@ public class Enemy : MonoBehaviour
     Enemies dog = new Enemies("Dog", 30, 10, 2.5f);
     Enemies glass = new Enemies("Glass", 40, 15, 1.5f);
     Enemies babyGlass = new Enemies("Baby Glass", 20, 7.5f, 2.5f);
+    public bool canSpawnBabies = true;
 
     private GameObject player;
     private GameObject testEnemy;
@@ -56,7 +61,9 @@ public class Enemy : MonoBehaviour
     //Checks what enemy type it is - Adrian
     [SerializeField] public bool isDog = false;
     [SerializeField] public bool isGlass = false;
-    [SerializeField] public bool isBabyGlass = false;
+    [SerializeField] public bool isBabyGlass1 = false;
+    [SerializeField] public bool isBabyGlass2 = false;
+    [SerializeField] public bool isBabyGlass3 = false;
 
 
     //REMEMBER TO MAKE A CONDITION FOR THIS - Adrian
@@ -83,7 +90,7 @@ public class Enemy : MonoBehaviour
             enemyDMG = glass.dmg;
             enemySpeed = glass.speed;
         }
-        else if (isBabyGlass)
+        else if (isBabyGlass1 || isBabyGlass2 || isBabyGlass3)
         {
             enemyHP = babyGlass.hp;
             enemyDMG = babyGlass.dmg;
@@ -118,10 +125,28 @@ public class Enemy : MonoBehaviour
     {
         Swarm(); //Enemy always follow player - William
 
-        //Enemy die if 0hp or under - Adrian
-        if (enemyHP <= 0)
+        //Enemy die if 0hp or under and spawns small babies if glass enemy - Adrian
+        if (enemyHP <= 0 && !isGlass)
         {
             Destroy(this.gameObject);
+            anima.SetBool("IsDead", true);
+        }
+        if (isGlass && enemyHP <= 0 && canSpawnBabies == true)
+        {
+            print("hhgh");
+            Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation);
+            Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation);
+            Instantiate(BabyGlassPreFab3, LaunchOffset.position, transform.rotation);
+            canSpawnBabies = false;
+        }
+        if (isGlass && enemyHP <= 0 && canSpawnBabies == false)
+        {
+            float dyingTimer = 0;
+            dyingTimer += Time.deltaTime;
+            if (dyingTimer > 0.3f)
+            {
+                Destroy(this.gameObject);
+            }
         }
 
         // The Animation for monster run cycle- Zion
