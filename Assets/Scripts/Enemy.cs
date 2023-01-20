@@ -73,8 +73,14 @@ public class Enemy : MonoBehaviour
     //REMEMBER TO MAKE A CONDITION FOR THIS - Adrian
     public bool inPlayProx = false;
 
+    //audiosource -ocran
+    [SerializeField] AudioSource sfxShatter;
+
     void Start()
     {
+
+        sfxShatter = GetComponent<AudioSource>();
+
         animat= GetComponent<Animator>();
         testEnemy = GameObject.FindGameObjectWithTag("Enemy");
         anima = GetComponent<Animator>();
@@ -144,6 +150,7 @@ public class Enemy : MonoBehaviour
         }
         if (isGlass && enemyHP <= 0 && canSpawnBabies == true)
         {
+
             print("hhgh");
             Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation);
             Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation);
@@ -152,6 +159,7 @@ public class Enemy : MonoBehaviour
         }
         if (isGlass && enemyHP <= 0 && hasSpawned)
         {
+            sfxShatter.Play();
             Destroy(this.gameObject);
         }
 
