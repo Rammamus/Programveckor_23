@@ -40,6 +40,7 @@ public class ENEMYSPAWNER : MonoBehaviour
 
     public GameObject betweenWaveTimer;
 
+    //Att man får coins efter varje wave - William
 
         private void Update()
     {
@@ -118,7 +119,7 @@ public class ENEMYSPAWNER : MonoBehaviour
 
     //spawner till enemies och väljer vilka enemies
 
-
+    //SpawnWave - Ocean
     void SpawnWave()
     {
         if (canSpawn && nextSpawnTime < Time.time)

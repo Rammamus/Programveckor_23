@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; 
 
+//Laddar in en scene - casper
+
 public class MAINMENU : MonoBehaviour
 {
     public AudioSource clickSound;
