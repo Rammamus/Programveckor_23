@@ -34258,6 +34258,38 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -813506019
       objectReference: {fileID: 0}
+    - target: {fileID: 7813533548787249424, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: tm
+      value: 
+      objectReference: {fileID: 2095567124}
+    - target: {fileID: 7813533548787249424, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: spr
+      value: 
+      objectReference: {fileID: 2095567122}
+    - target: {fileID: 7813533548787249425, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813533548787249425, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813533548787249425, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -813506019
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813533548787249425, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813533548787249438, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7813533548787249438, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7813533548927239020, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: timer
       value: 
@@ -60944,3 +60976,13 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!212 &2095567122 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7813533548345758143, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+  m_PrefabInstance: {fileID: 1162835401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2095567124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7813533548345758142, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+  m_PrefabInstance: {fileID: 1162835401}
+  m_PrefabAsset: {fileID: 0}

@@ -14,7 +14,7 @@ public class LaunchOffsetScriprt : MonoBehaviour
     {
         tm = GetComponent<Transform>();
         spr = GetComponent<SpriteRenderer>();
-        player = GetComponent<karäktar>();
+        
     }
 
     // Update is called once per frame
@@ -27,7 +27,9 @@ public class LaunchOffsetScriprt : MonoBehaviour
             float angle = (Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg);
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
+        
 
+        /*
         if (Input.GetKey(vänster))
         {
             if (true)
@@ -47,5 +49,6 @@ public class LaunchOffsetScriprt : MonoBehaviour
             }
 
         }
+        */
     }
 }

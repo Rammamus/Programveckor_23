@@ -213,6 +213,7 @@ public class karäktar : MonoBehaviour
                 attack.SetActive(false);
                 isassa = false;
                 attackDis = 0;
+                isAttacking = false;
             }
         }
     }
