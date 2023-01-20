@@ -17,9 +17,9 @@ public class karäktar : MonoBehaviour
     public Animator slicingAnimation;
     bool isrunning = true;
     bool isrunningWAx = true;
-    bool attackingP = true;
-    public Animator animAP;
-    bool isassa = true;
+   
+    public Animator animPA;
+    bool swosh1 = true;
     // Variable for SpriteRenderer - Zion
     public SpriteRenderer sRSprint;
     public SpriteRenderer sRSlash;
@@ -86,7 +86,7 @@ public class karäktar : MonoBehaviour
     {
         playHP = playMAXHP;
         runningAnimation = GetComponent<Animator>();
-        animAP = GetComponent<Animator>();
+        animPA = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
         sRSprint = GetComponent<SpriteRenderer>();
         sRSlash = GetComponent<SpriteRenderer>();
@@ -129,7 +129,7 @@ public class karäktar : MonoBehaviour
             dash.Play();
         }
 
-        // The Animation for run cycle- Zion, have not drawn the character
+        // The Animation for run cycle- Zion
       
         if (isrunning == true)
         {
@@ -202,16 +202,16 @@ public class karäktar : MonoBehaviour
             }
         }
 
-        // animation for attack-swoshen
+        // animation for attack-swoshen- Zion
         if (attack == true)
         {
-            animAP.SetBool("attackingP", true);
+            animPA.SetBool("swosh1", true);
             attackDis += Time.deltaTime;
             if (attackDis > 0.5f)
             {
-              animAP.SetBool("attackingP", false);
+              animPA.SetBool("swosh1", false);
                 attack.SetActive(false);
-                isassa = false;
+                swosh1 = false;
                 attackDis = 0;
                 isAttacking = false;
             }
