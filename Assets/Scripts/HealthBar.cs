@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+// Fungerande liv - William
 public class HealthBar : MonoBehaviour
 {
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Zion
 public class EnemyCounter : MonoBehaviour
 {
     public GameObject Enemy;

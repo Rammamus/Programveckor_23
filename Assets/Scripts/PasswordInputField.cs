@@ -19,7 +19,7 @@ public class PasswordInputField : MonoBehaviour
 
     public void CheckInput()
     {
-        if (inputfield.text == "c9s")      // check inputfield contains the string password
+        if (inputfield.text == "c9s")      // check inputfield contains the string password - casper
         {
             Debug.Log("Password accepted");
             print("bra");

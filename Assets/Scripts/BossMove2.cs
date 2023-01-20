@@ -21,6 +21,8 @@ public class BossMove2 : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    //dash för bossen -William
     void Update()
     {
         float dist = Vector3.Distance(player.transform.position, transform.position);
@@ -43,6 +45,9 @@ public class BossMove2 : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, Time.deltaTime * dashspeed * 0.25f);
         }
     }
+
+
+    // cooldowns och tid för dashen.
     IEnumerator DashMovementHandler()
     {
         tryingToDash = true;

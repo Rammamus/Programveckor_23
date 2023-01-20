@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Den som håller i Coins i shop - William
+
 public class CoinCounter : MonoBehaviour
 {
     public static CoinCounter instance;
