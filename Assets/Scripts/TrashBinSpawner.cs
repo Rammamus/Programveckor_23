@@ -39,7 +39,7 @@ public class TrashBinSpawner : MonoBehaviour
 
         enemySpawnTime += Time.deltaTime;
 
-        if (enemySpawnTime > 5 && canSpawn == true)
+        if (enemySpawnTime > 4.2f && canSpawn == true)
         {
             spawnFX.Play();
             Instantiate(ProjectilePreFab, LaunchOffset.position, transform.rotation);
