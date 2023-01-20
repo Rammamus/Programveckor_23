@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// fungerande ljudslider - Ocean 
  public class soundvolumeslider : MonoBehaviour
 {
     [SerializeField] Slider SliderVolume;
