@@ -32,7 +32,11 @@ public class powerups : MonoBehaviour
             powerup.SetActive(false);
 
         }
+
+        
     }
+
+    
 
     public void speed()
     {
@@ -48,5 +52,6 @@ public class powerups : MonoBehaviour
     {
         kr.playHP *= healthpwr;
     }
-
+    
+    
 }
