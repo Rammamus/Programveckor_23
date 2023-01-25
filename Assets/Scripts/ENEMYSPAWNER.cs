@@ -37,6 +37,10 @@ public class ENEMYSPAWNER : MonoBehaviour
 
     List<GameObject> enemies = new List<GameObject>();
 
+        void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     public GameObject betweenWaveTimer;
 
@@ -86,7 +90,7 @@ public class ENEMYSPAWNER : MonoBehaviour
             }
 
             player.coins += 5; // player.coins += 5;
-           
+            cc.IncreaseCoins(5);
            
         }
         else if (waveOver == false)
