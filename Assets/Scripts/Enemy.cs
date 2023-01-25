@@ -113,16 +113,19 @@ public class Enemy : MonoBehaviour
         {
             enemyHP *= 0.5f;
             enemyDMG *= 0.5f;
+            print("easy");
         }
         if (isMedium == true)
         {
             enemyHP *= 1f;
             enemyDMG *= 1f;
+            print("medium");
         }
         if (isHard == true)
         {
             enemyHP *= 1.25f;
             enemyDMG *= 1.5f;
+            print("hard");
         }
         if (isImpossible == true)
         {

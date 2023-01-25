@@ -14,7 +14,9 @@ public class CoinCounter : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
+
     void Start()
     {
         coinText.text = "COINS: " + currentCoins.ToString();
@@ -30,6 +32,13 @@ public class CoinCounter : MonoBehaviour
         currentCoins += v;
         coinText.text = "COINS: " + currentCoins.ToString();
     }
-    // Update is called once per frame
-    
+
+    private void Update()
+    {
+        coinText.text = "COINS: " + currentCoins.ToString();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            IncreaseCoins(5);
+        }
+    }
 }

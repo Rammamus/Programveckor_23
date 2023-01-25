@@ -5,7 +5,12 @@ using UnityEngine;
 //svårhets graderna. -Casper.
 public class DIFFICULITY : MonoBehaviour
 {
-    public Enemy em; 
+    public Enemy em;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     public void Easydiff()
     {
         em.gameObject.GetComponent<Enemy>().isEasy = true;

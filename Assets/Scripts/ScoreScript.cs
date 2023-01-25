@@ -40,7 +40,6 @@ public class ScoreScript : MonoBehaviour
     {
         if (cc.currentCoins >= Strength.price)
         {
-            print("heh");
             cc.DecreaseCoins(Strength.price);
             Strength.price *= 2;
             player.GetComponent<karäktar>().playDMG *= 1.1f;
