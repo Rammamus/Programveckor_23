@@ -8,7 +8,10 @@ using UnityEngine.SceneManagement;
 public class MAINMENU : MonoBehaviour
 {
     public AudioSource clickSound;
-
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     public void PlayGame ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // byt ut 1an mot gamescene
