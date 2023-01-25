@@ -216,7 +216,7 @@ public class Enemy : MonoBehaviour
                 isAttackingM = false;
             }
         }
-        if (collider.CompareTag("Attack"))
+        if (collider.CompareTag("Attack") && isImmortal == false)
         {
             enemyHP -= GameObject.FindObjectOfType<karäktar>().playDMG;
         }
