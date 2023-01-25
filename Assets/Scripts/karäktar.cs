@@ -5,7 +5,7 @@ public class karäktar : MonoBehaviour
 
 {
     public HealthBar healthBar;
-
+    public Animator andeath;
     //Variables for attacking - Adrian
     public GameObject attack;
     public bool isAttacking = false;
@@ -91,6 +91,7 @@ public class karäktar : MonoBehaviour
         source = GetComponent<AudioSource>();
         sRSprint = GetComponent<SpriteRenderer>();
         sRSlash = GetComponent<SpriteRenderer>();
+        andeath = GetComponent<Animator>();
     }
 
     void Update()
