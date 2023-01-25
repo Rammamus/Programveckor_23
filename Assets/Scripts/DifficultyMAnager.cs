@@ -21,6 +21,12 @@ public class DifficultyMAnager : MonoBehaviour
     {
         
     }
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     //unlockar olika svårhetsgrader - casper
     // Update is called once per frame
     void Update()
