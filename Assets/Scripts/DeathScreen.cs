@@ -16,6 +16,7 @@ public class DeathScreen : MonoBehaviour
     public bool gamePaused = false;
     public bool deathScreen = false;
 
+    public TMPro.TextMeshProUGUI coinTextpls;
 
     private void Start()
     {
@@ -42,6 +43,7 @@ public class DeathScreen : MonoBehaviour
     }
     public void Update()
     {
+        coinTextpls.text = StaticVariableHolder.permaCoins.ToString();
         //condition for game pause - Adrian
         if (Input.GetKeyDown(KeyCode.Escape))
         {
