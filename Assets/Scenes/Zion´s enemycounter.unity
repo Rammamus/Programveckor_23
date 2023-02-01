@@ -754,6 +754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "kar\xE4ktar"
       objectReference: {fileID: 0}
+    - target: {fileID: 7813533548345758139, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7813533548345758140, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: animPA
       value: 
@@ -765,7 +769,7 @@ PrefabInstance:
     - target: {fileID: 7813533548345758140, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1393015193}
     - target: {fileID: 7813533548345758142, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: m_RootOrder
       value: 7

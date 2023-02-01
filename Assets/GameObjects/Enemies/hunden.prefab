@@ -150,6 +150,7 @@ MonoBehaviour:
   isBabyGlass2: 0
   isBabyGlass3: 0
   inPlayProx: 0
+  sfxShatter: {fileID: 0}
 --- !u!95 &2738065988229043839
 Animator:
   serializedVersion: 4
