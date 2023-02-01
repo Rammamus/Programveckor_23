@@ -2866,7 +2866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1106623459
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3850,8 +3850,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1136043893}
+  andeath: {fileID: 0}
+  timerdeath: 0
   pausePanel: {fileID: 575595396}
   deathPanel: {fileID: 1506810148}
+  runningAnimation: {fileID: 0}
   gamePaused: 0
   deathScreen: 0
 --- !u!1 &1431302490
