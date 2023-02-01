@@ -43,7 +43,7 @@ public class DeathScreen : MonoBehaviour
     }
     public void Update()
     {
-        coinTextpls.text = StaticVariableHolder.permaCoins.ToString();
+        coinTextpls.text = StaticVariableHolder.test + " " + StaticVariableHolder.permaCoins.ToString();
         //condition for game pause - Adrian
         if (Input.GetKeyDown(KeyCode.Escape))
         {

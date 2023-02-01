@@ -109,25 +109,22 @@ public class Enemy : MonoBehaviour
         }
 
         //changes enemy stats with game difficulty - Casper
-        if (isEasy == true)
+        if (StaticVariableHolder.staticEasy == true)
         {
             enemyHP *= 0.5f;
             enemyDMG *= 0.5f;
-            print("easy");
         }
-        if (isMedium == true)
+        if (StaticVariableHolder.staticMedium == true)
         {
             enemyHP *= 1f;
             enemyDMG *= 1f;
-            print("medium");
         }
-        if (isHard == true)
+        if (StaticVariableHolder.staticHard == true)
         {
             enemyHP *= 1.25f;
             enemyDMG *= 1.5f;
-            print("hard");
         }
-        if (isImpossible == true)
+        if (StaticVariableHolder.staticImpossible == true)
         {
             enemyHP *= 1.5f;
             enemyDMG *= 2.5f;

@@ -13,6 +13,7 @@ public class DIFFICULITY : MonoBehaviour
     }
     public void Easydiff()
     {
+        StaticVariableHolder.test = "easy";
         StaticVariableHolder.staticEasy = true;
         StaticVariableHolder.staticMedium = false;
         StaticVariableHolder.staticHard = false;
@@ -21,6 +22,7 @@ public class DIFFICULITY : MonoBehaviour
     }
     public void Mediumdiff()
     {
+        StaticVariableHolder.test = "Medium";
         StaticVariableHolder.staticEasy = false;
         StaticVariableHolder.staticMedium = true;
         StaticVariableHolder.staticHard = false;
@@ -29,6 +31,7 @@ public class DIFFICULITY : MonoBehaviour
     }
     public void HardDiff()
     {
+        StaticVariableHolder.test = "Hard";
         StaticVariableHolder.staticEasy = false;
         StaticVariableHolder.staticMedium = false;
         StaticVariableHolder.staticHard = true;
@@ -38,6 +41,7 @@ public class DIFFICULITY : MonoBehaviour
     }
     public void ImpossibleDiff()
     {
+        StaticVariableHolder.test = "Impos";
         StaticVariableHolder.staticEasy = false;
         StaticVariableHolder.staticMedium = false;
         StaticVariableHolder.staticHard = false;
