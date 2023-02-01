@@ -87,6 +87,7 @@ public class ENEMYSPAWNER : MonoBehaviour
             {
                 waveTimer = 0;
                 timer2--;
+                print("countdown");
             }
 
             player.coins += 5; // player.coins += 5;
