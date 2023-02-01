@@ -40,5 +40,6 @@ public class CoinCounter : MonoBehaviour
         {
             IncreaseCoins(5);
         }
+        StaticVariableHolder.permaCoins = currentCoins;
     }
 }

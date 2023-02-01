@@ -50,6 +50,7 @@ public class DeathScreen : MonoBehaviour
         //condition for death screen - Adrian
         if (player.GetComponent<karäktar>().playHP <= 0)
         {
+            print("hasdied?");
             // animation when player dies and a timer in 1.1 seconds to deathscreen- Zion
             andeath.SetBool("isdying", true);
             if (isdying == true)
@@ -67,8 +68,9 @@ public class DeathScreen : MonoBehaviour
             } 
             
         }
-        if (deathScreen)
+        if (deathScreen == true)
         {
+            print("hasdied");
             Activate_deathscreen();
         }
     }
