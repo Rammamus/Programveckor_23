@@ -51,32 +51,6 @@ public class DeathScreen : MonoBehaviour
         {
             Activate_pausemenu();
         }
-        //condition for death screen - Adrian
-        if (player.GetComponent<karäktar>().playHP <= 0)
-        {
-            print("hasdied?");
-            // animation when player dies and a timer in 1.1 seconds to deathscreen- Zion
-            anim.SetBool("isdying", true);
-            if (isdying == true)
-            {
-                anim.SetBool( "isRunning" ,false);
-                Time.timeScale = 1;
-                timerdeath += Time.deltaTime;
-                if (timerdeath > 1.1f)
-                {
-                    deathScreen = true;
-                    timerdeath = 0;
-                }
-
-
-            } 
-            
-        }
-        if (deathScreen == true)
-        {
-            print("hasdied");
-            Activate_deathscreen();
-        }
     }
 
     public void Lobby ()
