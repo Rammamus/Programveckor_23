@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &440526552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7813533548345758136, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+  m_PrefabInstance: {fileID: 1317259380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &545169406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +1426,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7813533548345758142, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
   m_PrefabInstance: {fileID: 1317259380}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054721849 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7813533548345758140, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+  m_PrefabInstance: {fileID: 1317259380}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440526552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e1d87024a34814ca5cf8da758f972c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2054721851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440526552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de617343ed10b14aaa8c56b3a475576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2054721849}
+  timerdeath: 0
+  pausePanel: {fileID: 0}
+  deathPanel: {fileID: 0}
+  anim: {fileID: 0}
+  gamePaused: 0
+  deathScreen: 0
+  coinTextpls: {fileID: 0}
 --- !u!1001 &19841365022934744
 PrefabInstance:
   m_ObjectHideFlags: 0
