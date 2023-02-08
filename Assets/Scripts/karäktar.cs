@@ -226,7 +226,7 @@ public class karäktar : MonoBehaviour
         {
             float timerdeath = 0;
             print("hasdied?");
-            // animation when player dies and a timer in 1.1 seconds to deathscreen- Zion
+            // animation when player dies and a timer in 1.1 seconds before deathscreen- Zion
             animPA.SetBool("isdying", true);
             if (isDying == true)
             {
