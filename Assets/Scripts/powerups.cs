@@ -43,6 +43,7 @@ public class powerups : MonoBehaviour
 
     public void speed()
     {
+        print("speed");
         kr.playSpeed *= speedpwr;
     }
 
