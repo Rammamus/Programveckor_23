@@ -13,6 +13,7 @@ public class TrashBinSpawner : MonoBehaviour
     [SerializeField] public int maxEnemy;
     bool canSpawn = true;
     public Animator amM;
+    bool Trashdie;
     bool isSpawningM = true;
     bool time;
     float f;
@@ -50,7 +51,8 @@ public class TrashBinSpawner : MonoBehaviour
             enemySpawnTime = 0;
             enemyCount++;
         }
-        
-    
+
+       
+
     }
 }
