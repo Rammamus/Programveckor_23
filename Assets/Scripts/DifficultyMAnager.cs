@@ -39,39 +39,39 @@ public class DifficultyMAnager : MonoBehaviour
 
         if (mediumIsBeat == true)
         {
-            hardIsUnlock = true; 
+            hardIsUnlock = true;
+            StaticVariableHolder.staticUnlockHard = true;
         }
 
         if (hardIsBeat == true)
         {
             impossibleisUnlock = true;
+            StaticVariableHolder.staticUnlockImpos = true;
         }
 
-        if (hardIsUnlock == false)
+        if (StaticVariableHolder.staticUnlockHard == false)
         {
             hardbutton.SetActive(false);
             hardlockedButton.SetActive(true);
 
         }
-        else if (hardIsUnlock == true)
+        else if (StaticVariableHolder.staticUnlockHard == true)
         {
             hardbutton.SetActive(true);
             hardlockedButton.SetActive(false);
-            print("hardunlock");
         }
 
-        if (impossibleisUnlock == false)
+        if (StaticVariableHolder.staticUnlockImpos == false)
         {
             impossibleButton.SetActive(false);
             impossibleLockedButton.SetActive(true);
         } 
-        else if (impossibleisUnlock == true)
+        else if (StaticVariableHolder.staticUnlockImpos == true)
         {
             impossibleButton.SetActive(true);
             impossibleLockedButton.SetActive(false);
-            print("Impossibleunlock");
         }
-
+        
 
     }
 

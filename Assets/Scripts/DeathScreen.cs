@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//gjord av Adrian
 public class DeathScreen : MonoBehaviour
 {
     public karäktar player;
-    public Animator andeath;
     bool isdying = true;
     public float timerdeath = 0;
     public GameObject pausePanel;
     public GameObject deathPanel;
-    public Animator runningAnimation;
+    public Animator anim;
     bool isrunning = true;
     public bool gamePaused = false;
     public bool deathScreen = false;
@@ -20,8 +20,7 @@ public class DeathScreen : MonoBehaviour
 
     private void Start()
     {
-        andeath = GetComponent<Animator>();
-        isrunning = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
     public void Activate_pausemenu()
     {
@@ -43,37 +42,15 @@ public class DeathScreen : MonoBehaviour
     }
     public void Update()
     {
-        coinTextpls.text = StaticVariableHolder.test + " " + StaticVariableHolder.permaCoins.ToString();
+        if (coinTextpls != null)
+        {
+            coinTextpls.text = StaticVariableHolder.test + " " + StaticVariableHolder.permaCoins.ToString();
+        }
+        
         //condition for game pause - Adrian
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Activate_pausemenu();
-        }
-        //condition for death screen - Adrian
-        if (player.GetComponent<karäktar>().playHP <= 0)
-        {
-            print("hasdied?");
-            // animation when player dies and a timer in 1.1 seconds to deathscreen- Zion
-            andeath.SetBool("isdying", true);
-            if (isdying == true)
-            {
-                runningAnimation.SetBool( "isrunning" ,false);
-                Time.timeScale = 1;
-                timerdeath += Time.deltaTime;
-                if (timerdeath > 1.1f)
-                {
-                    deathScreen = true;
-                    timerdeath = 0;
-                }
-
-
-            } 
-            
-        }
-        if (deathScreen == true)
-        {
-            print("hasdied");
-            Activate_deathscreen();
         }
     }
 

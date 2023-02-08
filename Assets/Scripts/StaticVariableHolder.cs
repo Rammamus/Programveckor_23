@@ -10,5 +10,7 @@ public class StaticVariableHolder : MonoBehaviour
     public static bool staticMedium = false;
     public static bool staticHard = false;
     public static bool staticImpossible = false;
+    public static bool staticUnlockHard = false;
+    public static bool staticUnlockImpos = false;
     public static string test;
 }       

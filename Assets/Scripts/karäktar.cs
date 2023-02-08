@@ -4,6 +4,8 @@ using UnityEngine;
 public class karäktar : MonoBehaviour
 
 {
+    public bool deathScreenBool = false;
+    public bool isDying;
     public HealthBar healthBar;
     public Animator andeath;
     //Variables for attacking - Adrian
@@ -11,8 +13,9 @@ public class karäktar : MonoBehaviour
     public bool isAttacking = false;
     float attackDis = 0;
     float timer;
-    
+
     // Variables for animation - Zion
+    public DeathScreen deathScreen;
     public Animator runningAnimation;
     public Animator slicingAnimation;
     bool isrunning = true;
@@ -217,6 +220,30 @@ public class karäktar : MonoBehaviour
                 attackDis = 0;
                 isAttacking = false;
             }
+        }
+        //condition for death screen - Adrian
+        if (playHP <= 0)
+        {
+            float timerdeath = 0;
+            print("hasdied?");
+            // animation when player dies and a timer in 1.1 seconds before deathscreen- Zion
+            animPA.SetBool("isdying", true);
+            if (isDying == true)
+            {
+                animPA.SetBool("isRunning", false);
+                Time.timeScale = 1;
+                timerdeath += Time.deltaTime;
+                if (timerdeath > 1.1f)
+                {
+                    deathScreenBool = true;
+                    timerdeath = 0;
+                }
+            }
+        }
+        if (deathScreenBool == true)
+        {
+            print("hasdied");
+            deathScreen.Activate_deathscreen();
         }
     }
 
