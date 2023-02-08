@@ -11,6 +11,7 @@ public class powerups : MonoBehaviour
     public float pwrpwr = 1.25f;
     public float healthpwr = 10f;
     public karäktar kr;
+    bool x;
 
 
     // Start is called before the first frame update
@@ -23,13 +24,15 @@ public class powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (es.waveOver == true)
+        if (es.waveOver == true && x == true)
         {
             powerup.SetActive(true);
+            x = false;
         }
-        else if (es.waveOver == false)
+        if (es.waveOver == false)
         {
             powerup.SetActive(false);
+            x = true;
 
         }
 
