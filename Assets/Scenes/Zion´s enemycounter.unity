@@ -16454,6 +16454,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1912910705670860259, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: powerup
+      value: 
+      objectReference: {fileID: 601924713}
     - target: {fileID: 7813533547725237482, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -16534,6 +16538,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 733459288}
+    - target: {fileID: 7813533548345758140, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 1372759549}
     - target: {fileID: 7813533548345758142, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -16626,6 +16634,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7813533548927239020, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: cc
+      value: 
+      objectReference: {fileID: 1372759554}
     - target: {fileID: 7813533548927239020, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: timer
       value: 
@@ -17218,6 +17230,20 @@ MonoBehaviour:
   gamePaused: 0
   deathScreen: 0
   coinTextpls: {fileID: 612262684}
+--- !u!114 &1372759554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684628508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb8eb88fd1652f47bb58b3b19518dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 612262684}
+  currentCoins: 0
 --- !u!1 &1377098580
 GameObject:
   m_ObjectHideFlags: 0
@@ -17871,7 +17897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488286288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: 0.21, z: 0}
+  m_LocalPosition: {x: 0.402, y: 0.302, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66036,6 +66062,10 @@ PrefabInstance:
       value: trashbin_monster
       objectReference: {fileID: 0}
     - target: {fileID: 6501490577670896122, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6501490577670896122, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -66045,11 +66075,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6743898205427706992, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.93
+      value: 2.352
       objectReference: {fileID: 0}
     - target: {fileID: 6743898205427706992, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.86
+      value: 4.007
       objectReference: {fileID: 0}
     - target: {fileID: 6743898205427706992, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66082,6 +66112,14 @@ PrefabInstance:
     - target: {fileID: 6743898205427706992, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267702376601690245, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267702376601690245, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -813506019
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
