@@ -13,7 +13,8 @@ public class TrashBinSpawner : MonoBehaviour
     [SerializeField] public int maxEnemy;
     bool canSpawn = true;
     public Animator amM;
-    bool Trashdie;
+    [SerializeField]
+    bool Trashdie =true;
     bool isSpawningM = true;
     bool time;
     float f;
@@ -35,6 +36,12 @@ public class TrashBinSpawner : MonoBehaviour
                 isSpawningM = false;
             }
         
+        }
+
+        // animation for trashbin monster dies- Zion
+        if ( Trashdie == true)
+        {
+            amM.SetBool("TrashDie", true);
         }
 
 
