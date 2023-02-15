@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour
 
     public float moveSpeed;
 
+    public ENEMYSPAWNER spawner;
+
     // Variable for SpriteRenderer - Zion
     public SpriteRenderer sR;
 
@@ -152,9 +154,9 @@ public class Enemy : MonoBehaviour
         {
 
             print("hhgh");
-            Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation);
-            Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation);
-            Instantiate(BabyGlassPreFab3, LaunchOffset.position, transform.rotation);
+            spawner.enemies.Add(Instantiate(BabyGlassPreFab1, LaunchOffset.position, transform.rotation).gameObject);
+            spawner.enemies.Add(Instantiate(BabyGlassPreFab2, LaunchOffset.position, transform.rotation).gameObject);
+            spawner.enemies.Add(Instantiate(BabyGlassPreFab3, LaunchOffset.position, transform.rotation).gameObject);
             hasSpawned = true;
         }
         if (isGlass && enemyHP <= 0 && hasSpawned)

@@ -35,7 +35,7 @@ public class ENEMYSPAWNER : MonoBehaviour
     public float waveTimer;
     public int timer2 = 15;
 
-    List<GameObject> enemies = new List<GameObject>();
+    public List<GameObject> enemies = new List<GameObject>();
 
         void Awake()
     {
@@ -72,7 +72,7 @@ public class ENEMYSPAWNER : MonoBehaviour
         }
 
 
-        if (enemies.Count <= 0 )
+        if (enemies.Count <= 0)
         {
             waveOver = true;
             print("0mobs");
@@ -133,6 +133,7 @@ public class ENEMYSPAWNER : MonoBehaviour
         GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
         Transform randomPoint = spawnPoint[Random.Range(0, spawnPoint.Length)];
         enemies.Add( Instantiate(randomEnemy, randomPoint.position, Quaternion.identity));
+            enemies[enemies.Count - 1].GetComponent<Enemy>().spawner = this;
             currentWave.noOfEnemies--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
         }
