@@ -66259,6 +66259,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6501490577670896122, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6743898205427706992, guid: bb9ae9cc105c71b49a275cfdaf496114, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -66341,6 +66345,7 @@ MonoBehaviour:
   enemyCount: 0
   maxEnemy: 5
   amM: {fileID: 1488286289}
+  Trashdie: 0
   spawnFX: {fileID: 1277655975}
 --- !u!95 &19841365022934750
 Animator:

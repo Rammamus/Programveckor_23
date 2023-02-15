@@ -7,14 +7,17 @@ using UnityEngine.SceneManagement;
 public class DeathScreen : MonoBehaviour
 {
     public karäktar player;
-    bool isdying = true;
     public float timerdeath = 0;
     public GameObject pausePanel;
     public GameObject deathPanel;
-    public Animator anim;
-    bool isrunning = true;
     public bool gamePaused = false;
     public bool deathScreen = false;
+
+    // animations variabels
+    public Animator anim;
+    bool isrunning = true;
+    bool isdying = true;
+   
 
     public TMPro.TextMeshProUGUI coinTextpls;
 
