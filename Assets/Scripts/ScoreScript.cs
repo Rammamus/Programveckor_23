@@ -31,9 +31,7 @@ public class ScoreScript : MonoBehaviour
 
             cc.DecreaseCoins(HP.price);
             HP.price *= 2;
-            //changes the upgrade amount and raises the player stat - Adrian
-            StaticVariableHolder.staticUpgradeHP += 0.1f;
-            player.GetComponent<karäktar>().playHP *= StaticVariableHolder.staticUpgradeHP;
+            player.GetComponent<karäktar>().playHP *= 1.1f;
         }
 
     }
@@ -44,9 +42,7 @@ public class ScoreScript : MonoBehaviour
         {
             cc.DecreaseCoins(Strength.price);
             Strength.price *= 2;
-            //changes the upgrade amount and raises the player stat - Adrian
-            StaticVariableHolder.staticUpgradeStrength += 0.1f;
-            player.GetComponent<karäktar>().playDMG *= StaticVariableHolder.staticUpgradeStrength;
+            player.GetComponent<karäktar>().playDMG *= 1.1f;
 
         }
     }
@@ -57,9 +53,7 @@ public class ScoreScript : MonoBehaviour
         {
             cc.DecreaseCoins(Speed.price);
             Speed.price *= 2;
-            //changes the upgrade amount and raises the player stat - Adrian
-            StaticVariableHolder.staticUpgradeSpeed += 0.1f;
-            player.GetComponent<karäktar>().playSpeed *= StaticVariableHolder.staticUpgradeSpeed;
+            player.GetComponent<karäktar>().playSpeed *= 1.1f;
         }
     }
 
@@ -69,9 +63,7 @@ public class ScoreScript : MonoBehaviour
         {
             cc.DecreaseCoins(AttackSpeed.price);
             AttackSpeed.price *= 2;
-            //changes the upgrade amount and raises the player stat - Adrian
-            StaticVariableHolder.staticUpgradeAtckSpeed += 0.1f;
-            player.GetComponent<karäktar>().playAttackSpeed *= StaticVariableHolder.staticUpgradeAtckSpeed;
+            player.GetComponent<karäktar>().playAttackSpeed *= 1.1f;
         }
     }
 
