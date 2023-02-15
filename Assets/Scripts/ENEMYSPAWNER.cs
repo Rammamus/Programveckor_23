@@ -72,9 +72,10 @@ public class ENEMYSPAWNER : MonoBehaviour
         }
 
 
-        if (enemies.Count == 0 )
+        if (enemies.Count <= 0 )
         {
             waveOver = true;
+            print("0mobs");
         }
 
         

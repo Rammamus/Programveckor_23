@@ -6,7 +6,7 @@ public class powerups : MonoBehaviour
 {
 
     public ENEMYSPAWNER es;
-    public GameObject powerup;
+    public GameObject[] powerup;
     public float speedpwr = 1.25f;
     public float pwrpwr = 1.25f;
     public float healthpwr = 10f;
@@ -24,15 +24,21 @@ public class powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (es.waveOver == true && x == true)
+        if (es.waveOver == true)
         {
-            powerup.SetActive(true);
+            powerup[0].SetActive(true);
+            powerup[1].SetActive(true);
+            powerup[2].SetActive(true);
             x = false;
+            print("aktiv");
         }
         if (es.waveOver == false)
         {
-            powerup.SetActive(false);
+            powerup[0].SetActive(false);
+            powerup[1].SetActive(false);
+            powerup[2].SetActive(false);
             x = true;
+            print("inaktiv");
 
         }
 
