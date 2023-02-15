@@ -12,5 +12,9 @@ public class StaticVariableHolder : MonoBehaviour
     public static bool staticImpossible = false;
     public static bool staticUnlockHard = false;
     public static bool staticUnlockImpos = false;
+    public static float staticSpeed = 1;
+    public static float staticMaxHP = 1;
+    public static float staticDMG = 1;
+    public static float staticAtckSpeed = 1;
     public static string test;
 }       

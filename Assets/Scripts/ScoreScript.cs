@@ -28,10 +28,10 @@ public class ScoreScript : MonoBehaviour
     {
         if (cc.currentCoins >= HP.price)
         {
-
             cc.DecreaseCoins(HP.price);
             HP.price *= 2;
-            player.GetComponent<karäktar>().playHP *= 1.1f;
+            StaticVariableHolder.staticMaxHP += 0.1f;
+            player.GetComponent<karäktar>().playHP *= StaticVariableHolder.staticMaxHP;
         }
 
     }
@@ -42,7 +42,8 @@ public class ScoreScript : MonoBehaviour
         {
             cc.DecreaseCoins(Strength.price);
             Strength.price *= 2;
-            player.GetComponent<karäktar>().playDMG *= 1.1f;
+            StaticVariableHolder.staticDMG += 0.1f;
+            player.GetComponent<karäktar>().playDMG *= StaticVariableHolder.staticDMG;
 
         }
     }
@@ -53,7 +54,8 @@ public class ScoreScript : MonoBehaviour
         {
             cc.DecreaseCoins(Speed.price);
             Speed.price *= 2;
-            player.GetComponent<karäktar>().playSpeed *= 1.1f;
+            StaticVariableHolder.staticSpeed += 0.1f;
+            player.GetComponent<karäktar>().playSpeed *= StaticVariableHolder.staticSpeed;
         }
     }
 
@@ -63,7 +65,8 @@ public class ScoreScript : MonoBehaviour
         {
             cc.DecreaseCoins(AttackSpeed.price);
             AttackSpeed.price *= 2;
-            player.GetComponent<karäktar>().playAttackSpeed *= 1.1f;
+            StaticVariableHolder.staticAtckSpeed += 0.1f;
+            player.GetComponent<karäktar>().playAttackSpeed *= StaticVariableHolder.staticAtckSpeed;
         }
     }
 
