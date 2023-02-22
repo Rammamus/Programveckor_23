@@ -20860,9 +20860,9 @@ MonoBehaviour:
   m_text: 'MedKit
 
 
-    Gives X amount of hp.
+    Gives 10 hp.
 
-    (Only usuable 3 times)'
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc5866fe23480704a88b9f70b5b1730f, type: 2}
   m_sharedMaterial: {fileID: 4269292754009791369, guid: cc5866fe23480704a88b9f70b5b1730f, type: 2}
@@ -32202,7 +32202,7 @@ MonoBehaviour:
   m_text: 'IShowSpeed
 
 
-    X% speed boost'
+    25% speed boost'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cc5866fe23480704a88b9f70b5b1730f, type: 2}
   m_sharedMaterial: {fileID: 4269292754009791369, guid: cc5866fe23480704a88b9f70b5b1730f, type: 2}
@@ -35383,7 +35383,12 @@ PrefabInstance:
       propertyPath: waves.Array.data[24].typeOfEnemies.Array.data[1]
       value: 
       objectReference: {fileID: 313994156372459091, guid: 273c8ae706d04654f93543767fa08e35, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 7813533548927239021, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1912910705670860259, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
 --- !u!1 &1215078067
 GameObject:
@@ -35849,9 +35854,9 @@ MonoBehaviour:
   timerdeath: 0
   pausePanel: {fileID: 1364812994}
   deathPanel: {fileID: 1871817277}
-  anim: {fileID: 2095567127}
   gamePaused: 0
   deathScreen: 0
+  anim: {fileID: 2095567127}
   coinTextpls: {fileID: 875602360}
 --- !u!1 &1680758584
 GameObject:
@@ -62624,7 +62629,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Trenbolone Acetate
 
-    Increases damage by X%
+    Increases damage by 25%
 
     (-5 hp)'
   m_isRightToLeft: 0

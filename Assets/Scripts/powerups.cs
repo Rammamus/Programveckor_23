@@ -24,7 +24,7 @@ public class powerups : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (es.waveOver == true)
+       /* if (es.waveOver == true)
         {
             powerup[0].SetActive(true);
             powerup[1].SetActive(true);
@@ -40,7 +40,7 @@ public class powerups : MonoBehaviour
             x = true;
             print("inaktiv");
 
-        }
+        }*/
 
         
     }
@@ -50,6 +50,7 @@ public class powerups : MonoBehaviour
     public void speed()
     {
         kr.playSpeed *= speedpwr;
+        print("speeeeedddd");
     }
 
     public void power ()
