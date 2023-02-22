@@ -85,6 +85,9 @@ public class karäktar : MonoBehaviour
     Weapons sword = new Weapons("Sword", 20, 3);
     Weapons axe = new Weapons("Axe", 30, 5);
 
+
+    float timerdeath = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -224,22 +227,23 @@ public class karäktar : MonoBehaviour
         //condition for death screen - Adrian
         if (playHP <= 0)
         {
-            float timerdeath = 0;
             print("hasdied?");
             // animation when player dies and a timer in 1.1 seconds before deathscreen- Zion
             animPA.SetBool("isdying", true);
-            if (isDying == true)
-            {
+            //if (isDying == true)
+            //{
                 animPA.SetBool("isRunning", false);
                 Time.timeScale = 1;
                 timerdeath += Time.deltaTime;
+                print("timer");
                 if (timerdeath > 1.1f)
                 {
+                    print("heh");
                     deathScreenBool = true;
                     timerdeath = 0;
-                    
+                    isDying = false;
                 }
-            }
+            //}
         }
         if (deathScreenBool == true)
         {
