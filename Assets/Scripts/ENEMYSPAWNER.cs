@@ -61,7 +61,7 @@ public class ENEMYSPAWNER : MonoBehaviour
         if (totalEnemies.Length == 0)
         {
             
-            if (timer2 <= 0)
+            if (timer2 == 0)
             {
                 canSpawn = true;
                 waveOver = false;
@@ -72,7 +72,7 @@ public class ENEMYSPAWNER : MonoBehaviour
         }
 
 
-        if (enemies.Count <= 0)
+        if (enemies.Count == 0)
         {
             waveOver = true;
             print("0mobs");
