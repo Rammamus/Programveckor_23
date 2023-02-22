@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Wave
 {
+    //ocean
     public string waveName;
     public int noOfEnemies= 0;
     public GameObject[] typeOfEnemies;
@@ -17,6 +18,7 @@ public class Wave
 //räknar vilken wave och spawnpoints för enemies
 public class ENEMYSPAWNER : MonoBehaviour
 {
+    // Ocean
     public karäktar player;
     public Wave[] waves;
     public Transform[] spawnPoint;
@@ -37,6 +39,7 @@ public class ENEMYSPAWNER : MonoBehaviour
 
     public List<GameObject> enemies = new List<GameObject>();
 
+    //Ocean
         void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -44,10 +47,11 @@ public class ENEMYSPAWNER : MonoBehaviour
 
     public GameObject betweenWaveTimer;
 
-    //Att man får coins efter varje wave - William
+    
 
         private void Update()
     {
+        //enemy counter (list)
         for (int i = 0; i < enemies.Count; i++)
         {
             if (enemies[i] == null)
@@ -55,13 +59,14 @@ public class ENEMYSPAWNER : MonoBehaviour
                 enemies.RemoveAt(i);
             }
         }
+        //ocean wave counter
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
         if (totalEnemies.Length == 0)
         {
             
-            if (timer2 <= 0)
+            if (timer2 == 0)
             {
                 canSpawn = true;
                 waveOver = false;
@@ -71,15 +76,15 @@ public class ENEMYSPAWNER : MonoBehaviour
 
         }
 
-
-        if (enemies.Count <= 0)
+        //ocean enemy counter
+        if (enemies.Count == 0)
         {
             waveOver = true;
             print("0mobs");
         }
 
         
-        
+         // William och Ocean (Ocean gjorde timer, William gjorde coins)
         if (waveOver == true)
         {
             betweenWaveTimer.SetActive(true);
@@ -104,7 +109,7 @@ public class ENEMYSPAWNER : MonoBehaviour
       
 
         timer.text = "time: " + timer2.ToString();
-
+        //ocean gör så att timermn resets
         if (canSpawn == true)
         {
             waveOver = false;
@@ -113,11 +118,7 @@ public class ENEMYSPAWNER : MonoBehaviour
         }
     }
 
-    void SpawnNextWave()
-    {
-
-
-    }
+ 
 
 
 
