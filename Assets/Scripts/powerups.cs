@@ -60,7 +60,7 @@ public class powerups : MonoBehaviour
 
     public void health()
     {
-        kr.playHP *= healthpwr;
+        kr.playHP += healthpwr;
     }
     
     
