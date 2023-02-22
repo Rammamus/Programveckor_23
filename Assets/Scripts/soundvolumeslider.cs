@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// fungerande ljudslider - Ocean 
+
  public class soundvolumeslider : MonoBehaviour
-{
+{  // fungerande ljudslider - Ocean 
     [SerializeField] Slider SliderVolume;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ using UnityEngine.UI;
             Loading();
         }
     }
-
+    //sound volume slider gör så att det sparas Ocean
     public void ChangeVolume()
     {
         AudioListener.volume = SliderVolume.value;

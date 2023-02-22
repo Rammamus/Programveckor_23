@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-//wave namn, nummmer av enemies, vilken sort enemy, spawner.
+//wave namn, nummmer av enemies, vilken sort enemy, spawner. ocean
 
 public class Wave
 {
@@ -15,7 +15,7 @@ public class Wave
 
 }
 
-//räknar vilken wave och spawnpoints för enemies
+//räknar vilken wave och spawnpoints för enemies ocean
 public class ENEMYSPAWNER : MonoBehaviour
 {
     // Ocean
@@ -51,7 +51,7 @@ public class ENEMYSPAWNER : MonoBehaviour
 
         private void Update()
     {
-        //enemy counter (list)
+        //enemy counter (list) ocean
         for (int i = 0; i < enemies.Count; i++)
         {
             if (enemies[i] == null)
@@ -99,7 +99,7 @@ public class ENEMYSPAWNER : MonoBehaviour
             player.coins += 5; // player.coins += 5;
             cc.IncreaseCoins(5);
            
-        }
+        } //ocean wave over
         else if (waveOver == false)
         {
             betweenWaveTimer.SetActive(false);

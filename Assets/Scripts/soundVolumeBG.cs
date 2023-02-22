@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Ljud och volym - Ocean
 public class soundVolumeBG : MonoBehaviour
 {
+    
+    // Ljud och volym - Ocean
+
     [SerializeField] Slider SliderVolume;
     // Start is called before the first frame update
     void Start()
