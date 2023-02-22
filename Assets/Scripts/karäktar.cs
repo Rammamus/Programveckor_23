@@ -111,19 +111,19 @@ public class karäktar : MonoBehaviour
         }
         if (Input.GetKey(vänster))
         {
-            transform.position += new Vector3(-1, 0, 0) * Time.deltaTime * playSpeed;
+            transform.position += new Vector3(-3, 0, 0) * Time.deltaTime * playSpeed;
         }
         if (Input.GetKey(höger))
         {
-            transform.position += new Vector3(1, 0, 0) * Time.deltaTime * playSpeed;
+            transform.position += new Vector3(3, 0, 0) * Time.deltaTime * playSpeed;
         }
         if (Input.GetKey(up) && transform.position.y < 100)
         {
-            transform.position += new Vector3(0, 1, 0) * Time.deltaTime * playSpeed;
+            transform.position += new Vector3(0, 3, 0) * Time.deltaTime * playSpeed;
         }
         if (Input.GetKey(down) && transform.position.y > -100)
         {
-            transform.position += new Vector3(0, -1, 0) * Time.deltaTime * playSpeed;
+            transform.position += new Vector3(0, -3, 0) * Time.deltaTime * playSpeed;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && canDash)
@@ -162,12 +162,13 @@ public class karäktar : MonoBehaviour
         {
             playAttackSpeed = axe.attackSpeed;
             playDMG = axe.dmg;
-        
+            axeSlash.Play();
         }
         else if (usingSword == true)
         {
             playAttackSpeed = sword.attackSpeed;
             playDMG = sword.dmg;
+            swordSlash.Play();
             
         }
         
