@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//gjord av Adrian
+//Hanterar pause-menu och deathscreen - Adrian
 public class DeathScreen : MonoBehaviour
 {
     public karäktar player;
@@ -13,7 +13,7 @@ public class DeathScreen : MonoBehaviour
     public bool gamePaused = false;
     public bool deathScreen = false;
 
-    // animations variabels
+    // animations variabels - Zion
     public Animator anim;
     bool isrunning = true;
     bool isdying = true;

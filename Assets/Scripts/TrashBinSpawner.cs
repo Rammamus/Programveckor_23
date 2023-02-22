@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Gör så att trashbin gubben kan spawna små gubbar - Adrian
 public class TrashBinSpawner : MonoBehaviour
 {
     public GameObject ProjectilePreFab;
