@@ -162,12 +162,13 @@ public class karäktar : MonoBehaviour
         {
             playAttackSpeed = axe.attackSpeed;
             playDMG = axe.dmg;
-        
+            axeSlash.Play();
         }
         else if (usingSword == true)
         {
             playAttackSpeed = sword.attackSpeed;
             playDMG = sword.dmg;
+            swordSlash.Play();
             
         }
         
