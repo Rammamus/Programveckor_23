@@ -1302,9 +1302,9 @@ MonoBehaviour:
   timerdeath: 0
   pausePanel: {fileID: 1726907763}
   deathPanel: {fileID: 1097936773}
-  anim: {fileID: 0}
   gamePaused: 0
   deathScreen: 0
+  anim: {fileID: 545169407}
   coinTextpls: {fileID: 612262684}
 --- !u!1 &349490564
 GameObject:
@@ -2425,8 +2425,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -813506019
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -513759361, guid: 406f972a648622342ad3578bdc7aad77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2446,9 +2446,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545169406}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.82, y: 4.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4105,9 +4105,9 @@ MonoBehaviour:
   timerdeath: 0
   pausePanel: {fileID: 1326197923}
   deathPanel: {fileID: 1575117114}
-  anim: {fileID: 0}
   gamePaused: 0
   deathScreen: 0
+  anim: {fileID: 0}
   coinTextpls: {fileID: 0}
 --- !u!1 &814126996
 GameObject:
@@ -16710,7 +16710,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: f58cb8341df2b6c48b6cfafca2085e69, type: 2}
     - target: {fileID: 7813533548345758136, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: m_Name
-      value: "kar\xE4ktar (1)"
+      value: "kar\xE4ktar (1)s"
       objectReference: {fileID: 0}
     - target: {fileID: 7813533548345758139, guid: b25499bd7b76fca40af26140b4d3d0a5, type: 3}
       propertyPath: m_IsTrigger
@@ -17416,9 +17416,9 @@ MonoBehaviour:
   timerdeath: 0
   pausePanel: {fileID: 1726907763}
   deathPanel: {fileID: 1575117114}
-  anim: {fileID: 1372759546}
   gamePaused: 0
   deathScreen: 0
+  anim: {fileID: 1372759546}
   coinTextpls: {fileID: 612262684}
 --- !u!114 &1372759554
 MonoBehaviour:
@@ -17701,6 +17701,7 @@ GameObject:
   - component: {fileID: 1395064211}
   - component: {fileID: 1395064210}
   - component: {fileID: 1395064209}
+  - component: {fileID: 1395064212}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -17791,6 +17792,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1395064212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395064207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d5ce1c179975a438185b60a2ef65c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1415175186
 GameObject:
   m_ObjectHideFlags: 0
@@ -17999,7 +18012,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1488286291}
   - component: {fileID: 1488286290}
-  - component: {fileID: 1488286289}
   m_Layer: 0
   m_Name: trashbin_spawning_sma_javelr-Sheet_0
   m_TagString: Untagged
@@ -18007,26 +18019,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1488286289
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488286288}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d8b1863d71c998d4cbeba2b57188df8d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1488286290
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65856,9 +65848,9 @@ MonoBehaviour:
   timerdeath: 0
   pausePanel: {fileID: 0}
   deathPanel: {fileID: 0}
-  anim: {fileID: 0}
   gamePaused: 0
   deathScreen: 0
+  anim: {fileID: 0}
   coinTextpls: {fileID: 0}
 --- !u!1 &2057858420
 GameObject:
@@ -66344,7 +66336,7 @@ MonoBehaviour:
   spr: {fileID: 19841365022934751}
   enemyCount: 0
   maxEnemy: 5
-  amM: {fileID: 1488286289}
+  amM: {fileID: 0}
   Trashdie: 0
   spawnFX: {fileID: 1277655975}
 --- !u!95 &19841365022934750
@@ -66400,6 +66392,7 @@ MonoBehaviour:
   anima: {fileID: 19841365022934750}
   animat: {fileID: 0}
   moveSpeed: 0
+  spawner: {fileID: 0}
   sR: {fileID: 0}
   canSpawnBabies: 1
   "karakt\xE4r": {fileID: 1372759541}

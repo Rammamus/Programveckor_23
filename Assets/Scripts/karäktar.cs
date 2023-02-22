@@ -237,6 +237,7 @@ public class karäktar : MonoBehaviour
                 {
                     deathScreenBool = true;
                     timerdeath = 0;
+                    
                 }
             }
         }
