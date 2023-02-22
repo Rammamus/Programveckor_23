@@ -50,6 +50,7 @@ public class powerups : MonoBehaviour
     public void speed()
     {
         kr.playSpeed *= speedpwr;
+        print("speeeeedddd");
     }
 
     public void power ()
@@ -59,7 +60,7 @@ public class powerups : MonoBehaviour
 
     public void health()
     {
-        kr.playHP *= healthpwr;
+        kr.playHP += healthpwr;
     }
     
     
