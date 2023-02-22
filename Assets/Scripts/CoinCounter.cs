@@ -19,23 +19,23 @@ public class CoinCounter : MonoBehaviour
 
     void Start()
     {
-        coinText.text = "COINS: " + currentCoins.ToString();
+        coinText.text = "COINS: " + StaticVariableHolder.permaCoins.ToString();
     }
     public void DecreaseCoins(int v)
     {
-        currentCoins -= v;
-        coinText.text = "COINS: " + currentCoins.ToString();
+        StaticVariableHolder.permaCoins -= v;
+        coinText.text = "COINS: " + StaticVariableHolder.permaCoins.ToString();
     }
 
     public void IncreaseCoins(int v)
     {
         currentCoins += v;
-        coinText.text = "COINS: " + currentCoins.ToString();
+        coinText.text = "COINS: " + StaticVariableHolder.permaCoins.ToString();
     }
 
     private void Update()
     {
-        coinText.text = "COINS: " + currentCoins.ToString();
+        coinText.text = "COINS: " + StaticVariableHolder.permaCoins.ToString();
         if (Input.GetKeyDown(KeyCode.Space))
         {
             IncreaseCoins(5);
